@@ -11,7 +11,7 @@ const CustomNavbar = () => {
         <Navbar.Brand href="#home">
           <Link to={"/"}>
             <img
-              src="https://your-logo-url.com/logo.png"
+              src="\tezla-logo.jpg"
               alt="tezla Logo"
               className="navbar-logo"
             />
@@ -54,7 +54,9 @@ const CustomNavbar = () => {
             </Nav.Link>
 
             <Nav.Link href="#shopping" className="nav-item">
-              <Link to={"/contact"} className="text-decoration-none text-black">Contact</Link>
+              <Link to={"/contact"} className="text-decoration-none text-black">
+                Contact
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
