@@ -1,0 +1,16 @@
+
+.product-page {
+  display: flex;
+  margin: 20px;
+}
+
+
+.filter-container {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6; 
+}
+
+.card {
+  margin-bottom: 20px;
+}
