@@ -5,7 +5,6 @@ import "./App.css";
 const Landing = lazy(() => import("./pages/HomePage"));
 const Header = lazy(() => import("./components/header/Navbar"));
 const Footer = lazy(() => import("./components/footer/Footer"));
-const Copy = lazy(() => import("./components/footer/CopyRight"));
 const Products = lazy(() => import("./pages/ProductPage"));
 const Single = lazy(() => import("./pages/SingleProduct"));
 const Store = lazy(() => import("./pages/StoreLocator"));

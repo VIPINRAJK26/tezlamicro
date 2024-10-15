@@ -8,13 +8,23 @@ const Service = () => {
         {/* Left Section (Paperless Warranty) */}
         <div className="col-lg-4 col-md-12 p-sm-0 py-0 ">
           <div className="service-left p-4  text-white h-100">
-            <h4 className="mb-3 fw-bold">Product Installation</h4>
-            <p>All the Products and systems are delivered within the committed time and installed by the service engineers or designated technical personnel & relevant instructions to system operations will be provided to the Customers  </p>
-            <div className="steps">
-
-                <h4 className="pt-3 fw-bold">Vision Statement</h4>
-                <p>Our Vision is to be the global leader in sustainable energy and water solutions, providing innovative inverters, UPS systems , batteries ,solar systems , and water purifiers, We aim to empower communities with reliable , eco-friendly technologies , promoting a healthier planet and ensuring energy and water independence for all. </p>
-            </div>
+            <h4 className="mb-3 fw-bold">
+              The Manufacturing Capability Of Tezla Batteries And Inverters/UPS{" "}
+            </h4>
+            <p>
+              Tezla Batteries and Inverters boast advanced manufacturing
+              capabilities, integrating precision engineering and advanced
+              automation. Our facilities are equipped with the latest
+              technologies, enabling streamlined production processes and
+              meticulous quality control at every stage. With a focus on
+              efficiency and scalability, we can meet diverse demands while
+              maintaining exceptional standards of craftsmanship. From cell
+              assembly to final product testing, our manufacturing processes
+              adhere to rigorous standards, ensuring unparalleled reliability
+              and performance in every Tezla battery and inverter. Backed by a
+              commitment to excellence, we set the benchmark for innovation and
+              quality in the energy storage industry
+            </p>
           </div>
         </div>
 
@@ -22,11 +32,11 @@ const Service = () => {
           <div className="bg-light text-center  mb-4 h-50 d-flex flex-column justify-content-center">
             <div className="image mt-md-0 mt-4">
               <img
-                src="https://t4.ftcdn.net/jpg/03/24/96/81/360_F_324968111_sArrasbZoPu3xeKMedtQAWGk2ZqDeivM.jpg"
+                src="https://new.abb.com/images/librariesprovider98/industry-images/social_battery-industry_1200x627.jpg?sfvrsn=3ac94e0c_1"
                 alt="Customer Support"
                 className="img-fluid "
-                />
-                {/* <h5>Delighting customers is our philosophy</h5> */}
+              />
+              {/* <h5>Delighting customers is our philosophy</h5> */}
             </div>
           </div>
           <div className="image2 bg-light h-50 d-flex flex-column justify-content-center">

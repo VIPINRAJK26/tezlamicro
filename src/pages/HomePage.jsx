@@ -11,6 +11,7 @@ import Customers from "../components/home/Customers";
 import Strategy from "../components/home/Strategy";
 import BatterySection from "../components/home/BatterySection";
 import HighlightSpecifications from "../components/home/HighlightSpec";
+import TestApprove from "../components/text&approve/TestApprove";
 
 const HomePage = () => {
   return (
@@ -22,7 +23,7 @@ const HomePage = () => {
         <About />
       </div>
       <div>
-        <Strategy/>
+        {/* <Strategy/> */}
       </div>
       <div>
         <Service/>
@@ -34,13 +35,16 @@ const HomePage = () => {
         <Customers/>
       </div>
       <div>
-        <HighlightSpecifications/>
+        {/* <HighlightSpecifications/> */}
       </div>
       <div>
+        <TestApprove/>
+      </div>
+      <div className="pb-5">
         <BatterySection/>
       </div>
       <div>
-        <CardSlider />
+        {/* <CardSlider /> */}
       </div>
     </div>
   );

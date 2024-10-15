@@ -1,5 +1,5 @@
 .homepage {
-  background-color: #f1f0f0;
+  background-color: white;
 }
 
 .about-left {
@@ -16,28 +16,19 @@
   color: #007bff;
 }
 
-.about-right video {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
 
 .about-right p {
   position: absolute;
-  top: 80%;
-  opacity: 0;
-  font-size: 1.2rem;
-  transition: opacity 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.534);
-  padding: 10px;
-  border-radius: 15px;
-  line-height: 30px;
+  top: 20%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 15px;
+  line-height: 40px;
 }
 
-.about-right:hover p {
-  opacity: 1; 
+.about-right img{
+  width: 100%;
+  height: 100%;
 }
 
 

@@ -14,13 +14,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  height: 300px;
 }
 
 .battery-item {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -29,11 +30,9 @@
     transition: all .4s ease-in-out;
 }
 
-
-
 .battery-icon {
   font-size: 40px;
-  color: #007bff;
+  color:rgba(221, 5, 5, 0.9);
   margin-bottom: 15px;
 }
 

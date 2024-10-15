@@ -18,21 +18,26 @@ function About() {
           className="about-left col-12 col-md-4 rounded-4"
           data-aos="zoom-in"
         >
-          <h3 className="px-4 py-3 fs-4 fw-bold">About Warrior</h3>
+          <h3 className="px-4 py-3 fs-4 fw-bold">About Us</h3>
           <p className="px-4">
-            With 15 years of experience, Warrior Inverter excels in
-            manufacturing and installing high-quality inverters, batteries,
-            solar systems, and water purifiers. Our dedication to innovation and
-            excellence ensures top-tier products that meet the diverse needs of
-            residential, commercial, and industrial clients. <br /> <br />
-            Our energy solutions are designed for efficiency and durability,
-            promoting sustainability and reducing energy costs. Additionally,
-            our advanced water purifiers provide clean, safe drinking water,
-            enhancing overall quality of life. <br /> <br />
-            We prioritize customer satisfaction through comprehensive support
-            and maintenance services. Warrior Inverter is committed to leading
-            in green technology, driving environmental stewardship and energy
-            independence.
+            Tezla Battery and Inverter is a pioneer in advanced solutions for
+            energy storage and conversion. With a relentless commitment to
+            innovation, our company designs and produces high-performance
+            batteries and inverters tailored to meet diverse needs. We combine
+            advanced technology with sustainable practices, ensuring our
+            products deliver efficiency and durability while minimizing
+            environmental impact. Our team of experts, fueled by passion and
+            expertise, strives for excellence in every aspect, from research and
+            development to customer service. Tezla stands as a symbol of
+            reliability, powering homes, businesses, and industries worldwide
+            with dependable energy solutions that empower a brighter, greener
+            future. <br /> <br />
+            Tezla's tubular batteries, distinguished by their C10 and C20
+            ratings, epitomize durability and efficiency, providing a seamless
+            power supply over varying time intervals. Whether for residential,
+            commercial, or industrial applications, Tezla's batteries are
+            engineered to deliver consistent and enduring performance. <br />{" "}
+            <br />
           </p>
 
           <a href="#" className="view-more">
@@ -45,16 +50,18 @@ function About() {
           data-aos="zoom-in"
         >
           <img
-            src="https://avaada.com/wp-content/uploads/types-ofsolar-panels-min-1-scaled-1.jpg"
+            src="https://static.vecteezy.com/system/resources/thumbnails/003/421/390/small_2x/minimal-futuristic-abstract-gradient-red-stripes-background-design-free-vector.jpg"
             alt=""
             className="img-fluid rounded-4"
           />
           <p className=" text-white text-center">
-            Powering a Sustainable Future. With pioneering inverters, UPS
-            systems, batteries, solar solutions, and water purifiers, Warrior
-            leads in innovation and reliability. Trust Warrior for eco-friendly
-            technologies that ensure energy independence and clean water,
-            enhancing lives and protecting the planet
+            In addition to the provision of advanced tubular batteries, Tezla
+            extends its expertise to the realm of inverters, UPS, and solar
+            power units, establishing a holistic approach to energy management.
+            Our innovative products and systems are crafted with precision,
+            incorporating the latest technologies to ensure efficient
+            performance and reliability. We offer a promise of uninterrupted
+            power, energy efficiency, and a sustainable future.
           </p>
         </div>
       </div>

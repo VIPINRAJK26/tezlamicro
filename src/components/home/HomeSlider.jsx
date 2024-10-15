@@ -34,8 +34,8 @@ const HomeSlider = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="/IM-VIJAYAN.jpg"
-            className="d-block w-100"
+            src="https://www.induspowers.com/assets/img/power_backup/Digital_UPS_banner.webp"
+            className="d-block w-100 img-fluid"
             alt="First slide"
           />
         </div>
@@ -43,8 +43,8 @@ const HomeSlider = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="https://www.microtek.in/_next/image?url=https%3A%2F%2Fcms.microtek.in%2Fupload%2Fcmscontent%2FKVGirl-Web-1727686495943.jpg&w=1920&q=75"
-            className="d-block w-100"
+            src="https://img.freepik.com/free-photo/cozy-house-concept-with-wooden-toy-house_23-2149595131.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar"
+            className="d-block w-100 img-fluid"
             alt="Second slide"
           />
         </div>
