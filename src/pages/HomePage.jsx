@@ -30,14 +30,14 @@ const HomePage = () => {
         <Service />
       </div>
       <div>{/* <Awards /> */}</div>
-      <div >
+      <div className="py-4" >
         <Customers />
       </div>
       <div>{/* <HighlightSpecifications/> */}</div>
-      <div >
+      <div className="pb-5  mb-md-0" >
         <BatterySection />
       </div>
-      <div className="pb-5">
+      <div className="pt-5 pb-5 ">
         <TestApprove />
       </div>
     </div>

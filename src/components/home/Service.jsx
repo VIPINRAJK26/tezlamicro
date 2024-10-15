@@ -23,7 +23,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <div className="service-right col-md-6">
+      <div className="service-right pt-4 pt-md-0 col-md-6">
         <div className="service-right-img ">
           <img
             src="https://img.freepik.com/free-photo/automated-packaging-line-efficiency-production_91128-4695.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar"
