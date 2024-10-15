@@ -34,7 +34,7 @@ const HomeSlider = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="https://www.induspowers.com/assets/img/power_backup/Digital_UPS_banner.webp"
+            src="https://electronicafinance.com/wp-content/uploads/2023/05/how-to-convert-your-normal-inverter-into-a-solar-one-scaled.webp"
             className="d-block w-100 img-fluid"
             alt="First slide"
           />
@@ -43,7 +43,7 @@ const HomeSlider = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="https://img.freepik.com/free-photo/cozy-house-concept-with-wooden-toy-house_23-2149595131.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar"
+            src="https://t3.ftcdn.net/jpg/05/42/45/80/360_F_542458097_ngaVgYEFwhAbJyhKrKxoCW9zE7PVg29D.jpg"
             className="d-block w-100 img-fluid"
             alt="Second slide"
           />

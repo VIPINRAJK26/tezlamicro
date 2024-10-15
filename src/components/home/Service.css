@@ -1,6 +1,14 @@
 .service{
     background-color: white;
     box-sizing: border-box;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+
+.service-head p{
+    font-size: 1.2rem;
 }
 
 .step-number {
@@ -25,8 +33,8 @@
     background-image: linear-gradient(to bottom, rgb(50, 12, 2),rgba(221, 5, 5, 0.9));
 }
 
-.image img{
-    border-radius: 0px 30px 0px 30px;
+.image {
+    border-radius: 0px 30px 0px 0px;
 }
 
 /* .service-right{
@@ -41,7 +49,7 @@
     font-weight: 800;
 }
 
-.image2 img{
+.image2 {
     border-radius: 0px 0px 30px 30px;
 }
 

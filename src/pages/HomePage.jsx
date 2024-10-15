@@ -31,13 +31,13 @@ const HomePage = () => {
       <div>
         {/* <Awards /> */}
       </div>
-      <div>
+      <div className="pt-5">
         <Customers/>
       </div>
       <div>
         {/* <HighlightSpecifications/> */}
       </div>
-      <div>
+      <div className="pt-5">
         <TestApprove/>
       </div>
       <div className="pb-5">

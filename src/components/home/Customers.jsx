@@ -74,8 +74,11 @@ const Customers = () => {
   }, [isVisible]);
 
   return (
-    <div ref={containerRef} className="full-width-container mt-5">
-      <div className="overlay">
+    <div
+      ref={containerRef}
+      className="full-width-container justify-content-center mt-5"
+    >
+      {/* <div className="overlay">
         <div className="overlay-content">
           <h1 className="overlay-text display-3">
             {happyCustomers.toLocaleString()} L+
@@ -94,26 +97,26 @@ const Customers = () => {
           </h1>
           <h2 className="overlay-text2  ">Service Points</h2>
         </div>
-      </div>
+      </div> */}
 
-      <div className="chairman-message">
-        <p>
-          "I am so proud of our dedicated and very responsive team in
-          manufacturing and installing premium inverters, batteries, solar
-          systems, and water purifiers. Our journey has been driven by a
-          commitment to innovation, quality, and sustainability. We have
-          consistently delivered reliable energy solutions tailored to meet the
-          diverse needs of our residential, commercial, and industrial clients.
-          Our success is a testament to our dedicated team and loyal customers.
-          As we look to the future, we remain steadfast in our mission to lead
-          the renewable energy sector, providing advanced technologies that
-          promote environmental stewardship and energy independence."
+      <div className="chairman-message d-flex ">
+        <h1 className="text-center fw-bold ">
+          High-Tech Machinery For Innovative Solutions
+        </h1>
+        <p className="w-75 text-center  fs-3">
+          "we always stand for investing in Advanced Technologies and
+          infrastructure to stay ahead of the curve. Our commitment to quality
+          is unwavering, ensuring that all our products meet high performance
+          and international quality standards. our manufacturing plants are
+          equipped with the latest and most advanced machines sourced from
+          various countries worldwide. Our impressive list of machinery includes
+          "
         </p>
       </div>
 
       <img
         className="background-image2"
-        src="https://img.freepik.com/free-photo/cute-family-playing-summer-field_1157-37659.jpg?t=st=1727339822~exp=1727343422~hmac=2366186ebf725a816a3e45dc06b6dfe6485184c161340b472c9f31b7c7ce2ba2&w=1060" // Replace with actual image
+        src="https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar" // Replace with actual image
         alt="Background"
       />
     </div>

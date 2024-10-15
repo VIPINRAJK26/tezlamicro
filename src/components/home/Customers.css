@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
   color: white;
   font-size: 2rem;
   z-index: 1;
-}
+} */
 
 .overlay-content {
   transform: translate(100%, 200%);
@@ -55,15 +55,14 @@ body::-webkit-scrollbar {
 
 .chairman-message {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 28%;
+  left: -50px;
   color: white;
   padding: 20px;
   border-radius: 15px;
   font-size: 1.1rem;
-  max-width: 400px;
   z-index: 2;
+  align-items: center;
   /* transition: opacity 0.3s ease; */
 }
 

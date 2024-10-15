@@ -4,11 +4,11 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="container-fluid bg-light text-dark py-5">
+    <footer className="container-fluid bg-light text-dark pt-5">
       <div className="row text-center text-md-left">
         {/* Left Section: Links */}
         <div className="col-md-3 mb-3">
-          <h5>About</h5>
+          <h5 className="fw-bold">About</h5>
           <ul className="list-unstyled about ">
             <li>
               <a href="#" className="text-decoration-none text-dark">
@@ -40,7 +40,7 @@ const Footer = () => {
 
         {/* Middle Section: Address */}
         <div className="col-md-5 mb-3">
-          <h5>Address</h5>
+          <h5 className="fw-bold">Address</h5>
           <p className="address">
             TEZLA Energy Pvt. Ltd
             <br />
@@ -60,7 +60,7 @@ const Footer = () => {
 
         {/* Right Section: Location Map */}
         <div className="col-md-3 ps-5 mb-3">
-          <h5>Location Map</h5>
+          <h5 className="fw-bold">Location Map</h5>
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8743911616596!2d75.63103441538005!3d11.774137291781882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6bc80ef273721%3A0x5bcb95f63ebd5e89!2sAnanthapura%20Industrial%20Area%2C%20Kerala%20671321!5e0!3m2!1sen!2sin!4v1619489369865!5m2!1sen!2sin"
