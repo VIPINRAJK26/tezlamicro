@@ -6,10 +6,8 @@ const Service = () => {
     <div className="service container d-md-flex justify-content-center gap-4 rounded-5 my-5">
       <div className="service-left text-white col-md-6">
         <div className="service-head align-content-center p-5">
-          <h2 className="pb-3 fw-bold">
-            The Manufacturing Capability Of Tezla Batteries And Inverters/UPS{" "}
-          </h2>
-          <p >
+          <h2 className="pb-3 fw-bold">Our Capabilities </h2>
+          <p>
             Tezla Batteries and Inverters boast advanced manufacturing
             capabilities, integrating precision engineering and advanced
             automation. Our facilities are equipped with the latest

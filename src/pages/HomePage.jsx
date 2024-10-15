@@ -44,7 +44,7 @@ const HomePage = () => {
         <BatterySection/>
       </div>
       <div>
-        {/* <CardSlider /> */}
+        <CardSlider />
       </div>
     </div>
   );
