@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Customers.css"; 
+import "./Customers.css";
 
 const Customers = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,7 +19,7 @@ const Customers = () => {
         });
       },
       { threshold: 0.5 }
-    ); 
+    );
 
     if (containerRef.current) {
       observer.observe(containerRef.current);
@@ -40,16 +40,16 @@ const Customers = () => {
 
       const customerInterval = setInterval(() => {
         if (customerCount < 2) {
-          customerCount += 1; 
+          customerCount += 1;
           setHappyCustomers(customerCount);
         } else {
           clearInterval(customerInterval);
         }
-      }, 300); 
+      }, 300);
 
       const dealerInterval = setInterval(() => {
         if (dealerCount < 4) {
-          dealerCount += 1; 
+          dealerCount += 1;
           setDealerNetwork(dealerCount);
         } else {
           clearInterval(dealerInterval);
@@ -76,7 +76,7 @@ const Customers = () => {
   return (
     <div
       ref={containerRef}
-      className="full-width-container justify-content-center mt-5"
+      className="full-width-container justify-content-center "
     >
       {/* <div className="overlay">
         <div className="overlay-content">
@@ -99,26 +99,29 @@ const Customers = () => {
         </div>
       </div> */}
 
-      <div className="chairman-message d-flex ">
-        <h1 className="text-center fw-bold ">
-          High-Tech Machinery For Innovative Solutions
-        </h1>
-        <p className="w-75 text-center  fs-3">
-          "we always stand for investing in Advanced Technologies and
-          infrastructure to stay ahead of the curve. Our commitment to quality
-          is unwavering, ensuring that all our products meet high performance
-          and international quality standards. our manufacturing plants are
-          equipped with the latest and most advanced machines sourced from
-          various countries worldwide. Our impressive list of machinery includes
-          "
-        </p>
+      <div className=" chairman-message d-flex ">
+        <div className="col-md-6">
+          <h1 className="text-center fw-bold fs-2 w-75 m-auto ">
+            High-Tech Machinery For Innovative Solutions
+          </h1>
+          <p className="w-75 text-center m-auto pt-5 fs-5">
+            "we always stand for investing in Advanced Technologies and
+            infrastructure to stay ahead of the curve. Our commitment to quality
+            is unwavering, ensuring that all our products meet high performance
+            and international quality standards. our manufacturing plants are
+            equipped with the latest and most advanced machines sourced from
+            various countries worldwide. Our impressive list of machinery
+            includes "
+          </p>
+        </div>
+        <div className="col-md-6">
+          <img
+            className="background rounded-4"
+            src="https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar" // Replace with actual image
+            alt="Background"
+          />
+        </div>
       </div>
-
-      <img
-        className="background-image2"
-        src="https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar" // Replace with actual image
-        alt="Background"
-      />
     </div>
   );
 };

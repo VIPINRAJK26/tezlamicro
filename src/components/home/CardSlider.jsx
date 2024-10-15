@@ -17,7 +17,7 @@ const CardSlider = () => {
       {
         title: "Tubular Battery",
         image:
-          "https://5.imimg.com/data5/LB/ZN/VY/SELLER-31745615/tubular-battery.jpg",
+          "/tez-battery.jpg",
       },
       {
         title: "Inverter/Home",
@@ -26,7 +26,7 @@ const CardSlider = () => {
       {
         title: "HKVA Inverter",
         image:
-          "https://lumprodsta.blob.core.windows.net/prodcontainer/Images/60c60cc3-2e4f-4d35-9c6f-05e7aa0a231d_Optimus-3P-1.png",
+          "/home-ups.jpg",
       },
     ],
     // "Home UPS": [

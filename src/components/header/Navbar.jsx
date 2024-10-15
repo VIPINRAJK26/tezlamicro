@@ -11,7 +11,7 @@ const CustomNavbar = () => {
         <Navbar.Brand href="#home">
           <Link to={"/"}>
             <img
-              src="\tezla-logo.jpg"
+              src="\logo-transparant.png"
               alt="tezla Logo"
               className="navbar-logo"
             />
@@ -23,7 +23,10 @@ const CustomNavbar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavDropdown title="About" id="home-solutions-dropdown">
+            <Nav.Link href="#solar" className="nav-item">
+              <Link to={"/"} className="text-decoration-none text-black">About</Link>
+            </Nav.Link>
+            <NavDropdown title="Products" id="home-solutions-dropdown">
               <NavDropdown.Item href="#action/3.1">
                 Home Inverter
               </NavDropdown.Item>
@@ -39,18 +42,10 @@ const CustomNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#solar" className="nav-item">
-              Products
-            </Nav.Link>
-
             <Nav.Link href="#mobility" className="nav-item ">
               <Link to={"/dealer"} className="text-decoration-none text-dark">
                 Dealer Locator
               </Link>
-            </Nav.Link>
-
-            <Nav.Link href="#automotive" className="nav-item">
-              Customer Care
             </Nav.Link>
 
             <Nav.Link href="#shopping" className="nav-item">

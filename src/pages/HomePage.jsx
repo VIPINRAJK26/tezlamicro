@@ -23,28 +23,22 @@ const HomePage = () => {
         <About />
       </div>
       <div>
-        {/* <Strategy/> */}
+        <CardSlider />
       </div>
+      <div>{/* <Strategy/> */}</div>
       <div>
-        <Service/>
+        <Service />
       </div>
-      <div>
-        {/* <Awards /> */}
+      <div>{/* <Awards /> */}</div>
+      <div >
+        <Customers />
       </div>
-      <div className="pt-5">
-        <Customers/>
-      </div>
-      <div>
-        {/* <HighlightSpecifications/> */}
-      </div>
-      <div className="pt-5">
-        <TestApprove/>
+      <div>{/* <HighlightSpecifications/> */}</div>
+      <div >
+        <BatterySection />
       </div>
       <div className="pb-5">
-        <BatterySection/>
-      </div>
-      <div>
-        <CardSlider />
+        <TestApprove />
       </div>
     </div>
   );

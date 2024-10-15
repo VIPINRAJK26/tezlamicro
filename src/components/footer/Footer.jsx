@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,29 +12,24 @@ const Footer = () => {
           <h5 className="fw-bold">About</h5>
           <ul className="list-unstyled about ">
             <li>
-              <a href="#" className="text-decoration-none text-dark">
+              <Link to={"/"} className="text-decoration-none text-dark">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-dark">
+              <Link  className="text-decoration-none text-dark">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-dark">
-                Dealers
-              </a>
+              <Link to={"/dealer"} className="text-decoration-none text-dark">
+                Dealer Locator
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-dark">
-                Distributors
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-decoration-none text-dark">
-                Contact Us
-              </a>
+              <Link to={"/contact"} className="text-decoration-none text-dark">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -15,7 +15,7 @@ function About() {
     <section>
       <div className=" p-3 p-md-5 d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
         <div
-          className="about-left col-12 col-md-4 rounded-4"
+          className="about-left col-12 col-md-6 rounded-4"
           data-aos="zoom-in"
         >
           <h3 className="px-4 py-3 fs-4 fw-bold">About Us</h3>
@@ -38,23 +38,6 @@ function About() {
             commercial, or industrial applications, Tezla's batteries are
             engineered to deliver consistent and enduring performance. <br />{" "}
             <br />
-          </p>
-
-          <a href="#" className="view-more">
-            View More
-          </a>
-        </div>
-
-        <div
-          className="about-right col-12 col-md-8 mt-4 mt-md-0 ms-md-3"
-          data-aos="zoom-in"
-        >
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/003/421/390/small_2x/minimal-futuristic-abstract-gradient-red-stripes-background-design-free-vector.jpg"
-            alt=""
-            className="img-fluid rounded-4"
-          />
-          <p className=" text-white text-center">
             In addition to the provision of advanced tubular batteries, Tezla
             extends its expertise to the realm of inverters, UPS, and solar
             power units, establishing a holistic approach to energy management.
@@ -63,6 +46,21 @@ function About() {
             performance and reliability. We offer a promise of uninterrupted
             power, energy efficiency, and a sustainable future.
           </p>
+
+          <a href="#" className="view-more">
+            View More
+          </a>
+        </div>
+
+        <div
+          className="about-right col-12 col-md-6 mt-4 mt-md-4 ms-md-3"
+          data-aos="zoom-in"
+        >
+          <img
+            src="https://img.freepik.com/free-psd/abstract-background-design_1297-82.jpg?ga=GA1.2.1208105082.1712396076&semt=ais_hybrid"
+            alt=""
+            className="img-fluid rounded-4"
+          />
         </div>
       </div>
     </section>

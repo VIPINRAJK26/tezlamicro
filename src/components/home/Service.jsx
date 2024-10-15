@@ -4,8 +4,8 @@ import "./Service.css";
 const Service = () => {
   return (
     <div className="service container d-md-flex justify-content-center gap-4 rounded-5 my-5">
-      <div className="service-left text-white col-md-6">
-        <div className="service-head align-content-center p-5">
+      <div className="service-left  align-content-center text-white col-md-6">
+        <div className="service-head  p-5">
           <h2 className="pb-3 fw-bold">Our Capabilities </h2>
           <p>
             Tezla Batteries and Inverters boast advanced manufacturing
