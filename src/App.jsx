@@ -9,6 +9,7 @@ const Products = lazy(() => import("./pages/ProductPage"));
 const Single = lazy(() => import("./pages/SingleProduct"));
 const Store = lazy(() => import("./pages/StoreLocator"));
 const Preview = lazy(() => import("./pages/ProductPreview"));
+const Contact =lazy(()=> import("./pages/ContactUs"));
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
               <Route path="/" element={<Landing />} />
               <Route path="/products/:category" element={<Products />} />
               <Route path="/single" element={<Single />} />
-              <Route path="/store" element={<Store />} />
+              <Route path="/dealer" element={<Store />} />
               <Route path="/preview/:category" element={<Preview />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
         </main>

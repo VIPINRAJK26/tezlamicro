@@ -1,5 +1,9 @@
 .locator-img img{
-    width: 60%;
+    width: 20%;
+}
+
+.locator-top-head h1{
+    color: #918e8e;
 }
 
 body{

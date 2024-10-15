@@ -1,31 +1,57 @@
 import React, { useState } from "react";
-import { InputGroup, FormControl, Button } from "react-bootstrap";
-import "./SearchBar.css"
+import "./SearchBar.css";
 
-const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+const Locator = () => {
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSearchClick = () => {
-    console.log("Searching for:", searchTerm);
-  };
+  const states = [
+    "Select the State",
+    "California",
+    "New York",
+    "Texas",
+    "Florida",
+  ]; // Add more as needed
+  const cities = [
+    "Select the City",
+    "Los Angeles",
+    "San Francisco",
+    "Houston",
+    "Miami",
+  ]; // Add cities dynamically based on state
 
   return (
-    <InputGroup className="mb-3 d-flex justify-content-center">
-      <FormControl
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleSearchChange}
-        className="search rounded-5 ps-3"
-      />
-      <Button variant="primary" className="locator-btn rounded-5 ms-4 btn-lg fs-3" onClick={handleSearchClick}>
-        <p className="fs-6 ">Search</p>
-      </Button>
-    </InputGroup>
+    <div className="locator-container mt-5 d-flex justify-content-center gap-5">
+      <div>
+        <h3 className="m-0 align-content-center fw-bold text-muted pt-2 align-items-center">Locate a nearest dealer in your city</h3>
+      </div>
+      <div className="dropdowns">
+        <select
+          className="locator-select"
+          value={selectedState}
+          onChange={(e) => setSelectedState(e.target.value)}
+        >
+          {states.map((state, index) => (
+            <option key={index} value={state}>
+              {state}
+            </option>
+          ))}
+        </select>
+
+        <select
+          className="locator-select"
+          value={selectedCity}
+          onChange={(e) => setSelectedCity(e.target.value)}
+        >
+          {cities.map((city, index) => (
+            <option key={index} value={city}>
+              {city}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
   );
 };
 
-export default SearchBar;
+export default Locator;

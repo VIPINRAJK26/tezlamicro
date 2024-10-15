@@ -1,11 +1,28 @@
 import React, { Component } from "react";
 import "./StoreLocator.css";
-import SearchBar from "../components/storelocator/SearchBar";
+import Locator from "../components/storelocator/SearchBar";
 
 const StoreLocator = () => {
   return (
-    <div className="d-md-flex py-md-5 py-3 container  ">
-      <div className="locator-img col-md-4 col-12 text-center">
+    <div className="py-md-5 py-3 container  ">
+      <div className="locator-top pb-5">
+        <div className="locator-top-head text-center">
+          <h1 className="fw-bold display-4">We are here to Serve you</h1>
+        </div>
+      </div>
+      <div className="locator-bottom ">
+        <div className="locator-img text-center">
+          <img src="/store_locator.png" className="img-fluid" alt="" />
+        </div>
+        <Locator />
+      </div>
+    </div>
+  );
+};
+
+export default StoreLocator;
+
+{/* <div className="locator-img col-md-4 col-12 text-center">
         <img src="/store_locator.png" alt="" />
       </div>
       <div className="search-location text-center pt-4 col-md-8 col-12 ">
@@ -16,9 +33,4 @@ const StoreLocator = () => {
             <SearchBar />
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default StoreLocator;
+      </div> */}

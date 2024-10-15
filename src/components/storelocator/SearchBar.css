@@ -1,15 +1,41 @@
-.search{
-    max-width: 600px;
-    min-height: 50px;
+.locator-container {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.locator-btn{
-    background-color: #245284;
-    color: white;
-    width: 120px;
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.locator-btn p{
-    transform: translateY(20%);
+.dropdowns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+.locator-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #007bff;
+  background-color: #e7f0fd;
+  width: 200px;
+  outline: none;
+  cursor: pointer;
+}
+
+.locator-select:hover {
+  background-color: #d4e3fb;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .locator-container h3 {
+    font-size: 1.2rem;
+  }
+  .locator-select {
+    width: 100%;
+  }
+}

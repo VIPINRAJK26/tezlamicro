@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   return (
@@ -8,11 +9,13 @@ const CustomNavbar = () => {
       <Container>
         {/* Brand logo */}
         <Navbar.Brand href="#home">
-          <img
-            src="https://your-logo-url.com/logo.png"
-            alt="tezla Logo"
-            className="navbar-logo"
-          />
+          <Link to={"/"}>
+            <img
+              src="https://your-logo-url.com/logo.png"
+              alt="tezla Logo"
+              className="navbar-logo"
+            />
+          </Link>
         </Navbar.Brand>
 
         {/* Hamburger toggle for mobile */}
@@ -40,8 +43,10 @@ const CustomNavbar = () => {
               Products
             </Nav.Link>
 
-            <Nav.Link href="#mobility" className="nav-item">
-              Dealer/Distributor
+            <Nav.Link href="#mobility" className="nav-item ">
+              <Link to={"/dealer"} className="text-decoration-none text-dark">
+                Dealer Locator
+              </Link>
             </Nav.Link>
 
             <Nav.Link href="#automotive" className="nav-item">
@@ -49,7 +54,7 @@ const CustomNavbar = () => {
             </Nav.Link>
 
             <Nav.Link href="#shopping" className="nav-item">
-              Contact
+              <Link to={"/contact"} className="text-decoration-none text-black">Contact</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
