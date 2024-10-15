@@ -34,7 +34,7 @@ const HomeSlider = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="https://electronicafinance.com/wp-content/uploads/2023/05/how-to-convert-your-normal-inverter-into-a-solar-one-scaled.webp"
+            src="/home-slider.jpg"
             className="d-block w-100 img-fluid"
             alt="First slide"
           />
@@ -43,7 +43,7 @@ const HomeSlider = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="https://t3.ftcdn.net/jpg/05/42/45/80/360_F_542458097_ngaVgYEFwhAbJyhKrKxoCW9zE7PVg29D.jpg"
+            src="https://electronicafinance.com/wp-content/uploads/2023/05/how-to-convert-your-normal-inverter-into-a-solar-one-scaled.webp"
             className="d-block w-100 img-fluid"
             alt="Second slide"
           />

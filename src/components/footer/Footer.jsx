@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section: Location Map */}
-        <div className="col-md-3 ps-5 mb-3">
+        <div className="col-md-3 ps-md-5 mb-3">
           <h5 className="fw-bold">Location Map</h5>
           <iframe
             title="Google Map"

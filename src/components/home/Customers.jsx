@@ -101,7 +101,7 @@ const Customers = () => {
 
       <div className=" chairman-message d-md-flex d-block">
         <div className="col-md-6 col-12">
-          <h1 className="text-center fw-bold  w-75 m-auto ">
+          <h1 className="text-center fw-bold  w-100 m-auto ">
             High-Tech Machinery For Innovative Solutions
           </h1>
           <p className="w-75 text-center m-auto pt-2 pt-md-5 ">
@@ -114,9 +114,9 @@ const Customers = () => {
             includes "
           </p>
         </div>
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12 pt-md-0 pt-4">
           <img
-            className="background rounded-4"
+            className="background img-fluid rounded-4"
             src="https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid-rr-similar" // Replace with actual image
             alt="Background"
           />

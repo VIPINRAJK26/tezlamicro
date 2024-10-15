@@ -3,7 +3,7 @@ import "./testapprove.css";
 
 const TestApprove = () => {
   return (
-    <div className="container text-center py-5">
+    <div className="container text-center py-md-5 pt-5 mt-4 mt-md-0">
       <h1 className="fw-bold">Tested & Approved</h1>
       <h2 className="text-white approve fw-bold">
         <span>

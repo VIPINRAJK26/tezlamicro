@@ -3,3 +3,9 @@
     border-radius: 10px;
     padding: 10px;
 }
+
+@media (max-width:768px){
+    .approve{
+        font-size: 1.2rem;
+    }
+}
