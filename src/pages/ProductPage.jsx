@@ -9,40 +9,80 @@ import { useParams } from "react-router-dom";
 const batteryData = [
   {
     image: "/tez-battery.jpg",
-    title: "Battery 1",
-    sku: "SKU123",
+    title: "C20 TBL ",
+    sku: "12V-100AH/20HR",
   },
   {
     image: "/tez-battery.jpg",
 
-    title: "Battery 2",
-    sku: "SKU124",
+    title: "C20TBL1200T ",
+    sku: "12V-120AH/20HR",
     price: "$200",
     oldPrice: "$220",
   },
   {
     image: "/tez-battery.jpg",
 
-    title: "Battery 3",
-    sku: "SKU125",
+    title: "C20TBL1500T ",
+    sku: "12V-150AH/20HR",
     price: "$300",
     oldPrice: "$320",
   },
   {
     image: "/tez-battery.jpg",
 
-    title: "Battery 4",
-    sku: "SKU126",
+    title: "C20TBL2000T",
+    sku: "12V – 200AH",
     price: "$400",
     oldPrice: "$420",
   },
   {
     image: "/tez-battery.jpg",
 
-    title: "Battery 5",
-    sku: "SKU127",
-    price: "$500",
-    oldPrice: "$520",
+    title: "C10TBL1000",
+    sku: "12V-100AH / 10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL1200",
+    sku: "12V120AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL1300",
+    sku: "12V – 130AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL1300",
+    sku: "12V – 130AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL1300",
+    sku: "12V – 130AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL1300",
+    sku: "12V – 130AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C102000",
+    sku: "12V-200AH/10HR",
+  },
+  {
+    image: "/tez-battery.jpg",
+
+    title: "C10TBL2200",
+    sku: "12V-220AH /10HR",
   },
 ];
 

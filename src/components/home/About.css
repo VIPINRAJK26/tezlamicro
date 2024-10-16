@@ -8,6 +8,10 @@
   border-radius: 1rem;
 }
 
+.about-left p{
+  text-align: justify;
+}
+
 .view-more {
   position: relative;
   left: 25px;

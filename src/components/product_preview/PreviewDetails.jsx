@@ -203,7 +203,7 @@ const PreviewDetails = () => {
   }
 
   return (
-    <div className="preview container mx-0 px-0 mt-5">
+    <div className="preview container mx-0 px-0 mt-1">
       {productData.map((product, index) => (
         <div className="preview-main-card rounded-2 card my-5" key={index}>
           {/* <div
@@ -220,12 +220,12 @@ const PreviewDetails = () => {
             <h4 className="fw-bold card-title text-center">
               {product.sub_name}
             </h4>
-            <p className="card-text fw-medium fs-5 text-center pt-4 ">
+            <p className="card-text fw-medium  pt-4 ">
               {product.slogan}
             </p>
 
             <div className="detail-section justify-content-center text-center pt-4">
-              <div className="d-flex detail-main align-content-center align-items-center justify-content-center">
+              <div className="d-md-flex detail-main align-content-center align-items-center justify-content-center">
                 <div className="detail-sub col-md-5">
                   <ul
                     className="list-unstyled fw-bold text-start"
@@ -268,7 +268,7 @@ const PreviewDetails = () => {
             </div>
           </div>
 
-          <div className="d-flex text-center justify-content-center pb-5 fw-bold small gap-5">
+          <div className="d-md-flex text-center justify-content-center pb-5 fw-bold small gap-5">
             {product.features2.map((feature, idx) => (
               <li className="list-unstyled" key={idx}>
                 {feature}

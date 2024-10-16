@@ -24,6 +24,14 @@
   position: relative;
 }
 
+.right-phone{
+  position: relative;
+  left: 30%;
+  gap: 35px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
 .nav-main .nav-item:hover,
 .nav-main .nav-item:focus,
 .active {

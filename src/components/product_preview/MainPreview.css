@@ -17,3 +17,16 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .preview-data p {
+    position: relative;
+    font-size: 1rem;
+    top: 0%;
+    color: rgb(56, 56, 56);
+    text-shadow: none;
+    text-align: justify;
+    padding-top: 50px;
+    
+  }
+}

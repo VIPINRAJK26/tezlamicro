@@ -8,12 +8,21 @@
   color: white;
 }
 
+.card-text {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
 .card-header {
   border-radius: 0.5rem 0.5rem 0 0; /* Rounded corners for the header */
 }
 
 .preview-body {
   padding: 20px;
+}
+
+.preview-body h4 {
+  font-size: 1.5rem;
 }
 
 .text-start {
@@ -25,4 +34,20 @@
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .card-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .preview-body h2{
+    font-size: 1.5rem;
+  }
+
+  .preview-body h4 {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
 }
