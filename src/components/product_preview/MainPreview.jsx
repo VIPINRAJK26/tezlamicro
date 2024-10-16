@@ -6,12 +6,15 @@ const MainPreview = () => {
 
   // Define images for each category
   const images = {
-    "Tubular Batteries":
-      "https://www.megamaxsolar.com/blogs/wp-content/uploads/2023/10/Solar-InRoof.jpg",
-    "Inverter/Home UPS": "https://www.yourwebsite.com/path-to-ups-image.jpg",
-    "HKVA Inverter/UPS": "https://www.yourwebsite.com/path-to-ups-image.jpg",
-    "Solar PCU": "https://www.yourwebsite.com/path-to-ups-image.jpg",
-    "MPPT'S": "https://www.yourwebsite.com/path-to-ups-image.jpg",
+    Batteries: "/home-slider.jpg",
+    "Home Ups":
+      "https://www.tatagreenbattery.com/wp-content/uploads/2020/11/Banner_01_1920x837-4-1.jpg",
+    "HKVA Inverter":
+      "https://www.tulsibattery.com/wp-content/uploads/Luminous-iCruze-Banner.webp",
+    "Solar PCU":
+      "https://www.upsinverter.com/wp-content/uploads/2020/09/solar-pcu31-min.jpg",
+    "MPPT":
+      "https://i.ytimg.com/vi/6BBsLsQKByc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDwdUos8eAburUa3-veTWFlviajcQ",
   };
 
   // Fallback image if category doesn't match

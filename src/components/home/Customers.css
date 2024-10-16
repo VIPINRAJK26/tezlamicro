@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
   }
 
   .full-width-container {
-    height: 200vh; 
+    height: 90vh; 
     position: relative;
     overflow: visible;
   }

@@ -30,7 +30,7 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="nav-main">
             <Nav.Link>
               <Link to="/" className="text-decoration-none text-black">
                 About
@@ -41,7 +41,7 @@ const CustomNavbar = () => {
               {categories.map((category, index) => (
                 <NavDropdown.Item key={index}>
                   <Link
-                    to={`/preview/${category.path}`} // Dynamic category path
+                    to={`/preview/${category.path}`} 
                     className="text-decoration-none text-black"
                   >
                     {category.name}

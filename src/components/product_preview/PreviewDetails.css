@@ -1,17 +1,28 @@
-.preview-main-card{
-  height: 550px;
-} 
- 
+.preview-main-card {
+  margin-bottom: 20px; /* Space between cards */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(12, 2, 50),
+    rgba(52, 5, 221, 0.9)
+  );
+  color: white;
+}
+
+.card-header {
+  border-radius: 0.5rem 0.5rem 0 0; /* Rounded corners for the header */
+}
+
 .preview-body {
-  position: relative;
-  top: 70px;
+  padding: 20px;
 }
 
-.detail-section{
-  padding-top: 12%;
+.text-start {
+  margin-top: 20px; /* Space for buttons */
 }
- 
- 
- 
 
-
+.detail-sub-img img {
+  width: 90%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
