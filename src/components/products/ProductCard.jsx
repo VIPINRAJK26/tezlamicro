@@ -13,9 +13,9 @@ const ProductCard = ({ image, title, sku, price, oldPrice }) => {
       </Link>
       <Card.Body>
         <Card.Text>
-          <span className="text-primary fw-bold">{title}</span>
+          <div className="text-primary text-center fw-bold">{title}</div>
 
-          <div className="text-black small">{sku}</div>
+          <div className="text-black text-center small">{sku}</div>
         </Card.Text>
         <Link to={"/single"}>
           <Button variant="outline-primary">Enquire Now</Button>

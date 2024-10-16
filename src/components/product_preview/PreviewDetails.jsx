@@ -226,9 +226,9 @@ const PreviewDetails = () => {
 
             <div className="detail-section justify-content-center text-center pt-4">
               <div className="d-md-flex detail-main align-content-center align-items-center justify-content-center">
-                <div className="detail-sub col-md-5">
+                <div className="detail-sub col-md-5 pt-5">
                   <ul
-                    className="list-unstyled fw-bold text-start"
+                    className="list-unstyled fw-bold text-md-start"
                     style={{ lineHeight: "30px" }}
                   >
                     {product.features1.map((feature, idx) => (
@@ -246,7 +246,7 @@ const PreviewDetails = () => {
               </div>
 
 
-              <div className="pt-5">
+              <div className="pt-3">
                 <div className="pb-2">
                   <h5 className="fw-bold">{product.Compactable}</h5>
                 </div>
