@@ -32,7 +32,7 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav-main">
             <Nav.Link>
-              <Link to="/" className="text-decoration-none text-black">
+              <Link to="/" className="text-decoration-none text-black nav-item">
                 About
               </Link>
             </Nav.Link>
@@ -51,12 +51,12 @@ const CustomNavbar = () => {
             </NavDropdown>
 
             <Nav.Link>
-              <Link to="/dealer" className="text-decoration-none text-dark">
+              <Link to="/dealer" className="text-decoration-none text-dark nav-item">
                 Dealer Locator
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/contact" className="text-decoration-none text-black">
+              <Link to="/contact" className="text-decoration-none text-black nav-item">
                 Contact
               </Link>
             </Nav.Link>

@@ -11,9 +11,9 @@
 
 .nav-main {
   position: relative;
-  left: 20%;
+  left: 22%;
   gap: 40px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .nav-item {
@@ -23,8 +23,8 @@
   position: relative;
 }
 
-.nav-item:hover,
-.nav-item:focus,
+.nav-main .nav-item:hover,
+.nav-main .nav-item:focus,
 .active {
   color: red;
   border-bottom: 2px solid red;

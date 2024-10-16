@@ -78,16 +78,110 @@ const batteryData = [
 
 const upsData = [
   {
-    name: "Spider",
-    sub_name: "INVERTER & HOME UPS",
-    slogan: "Switch on to a brighter tomorrow with our inverter or UPS.",
-    features1: ["IPS TECHNOLOGY", "32 BIT", "OVERLOAD PROTECTION"],
-    features2: [
-      "Technology: Pure Sinewave",
-      "Range: 1500 VA",
-      "Warranty: 3 Years",
+    name: "SERIES 12V",
+    sub_name: "RESIDENTIAL & COMMERCIAL",
+    slogan:
+      "Tezla home ups range is available in a variety of power configurations to meet power back-up requirements for all homes and offices. All our power back-up for home office products go through good quality control and come with after-sales support and warranty Jive the unlimited energy lifestyle with Tezla home-ups.based on IPS (Intely power saving) technology. This saves so much electricity.",
+    features1: [
+      "SPECIAL FEATURES :",
+      "IPS TECHNOLOGY",
+      "32 BIT",
+      "INPUT MAINS PROTECTION THROUGH-MCB",
+      "CHARGING COMMENCES EVEN LOW AS 110 AC",
+      "SMART CHARGING TECHNOLOGY",
     ],
-    Image: "https://path_to_image.jpg",
+    features2: [
+      "OVERLOAD / SHORT CIRCUIT",
+      "SMART THERMAL MANAGEMENT SYSTEM",
+      "OVERCHARGE AND DISCHARGE PROTECTION",
+      "CAPACITY : 750 VA - 1300 VA",
+    ],
+    Image: "/home-ups.jpg",
+  },
+  // Add more UPS products...
+];
+const hkvaData = [
+  {
+    name: "SERIES Higher",
+    sub_name: "HEAVY DUTY INVERTER & UPS SYSTEMS",
+    slogan:
+      "TEZLA higher(HKVA) offers high-quality and reliable power backup for running office and sensitive equipment",
+    features1: [
+      "FEATURES :",
+      "HIGH OVERLOAD CAPACITY",
+      "IPS TECHNOLOGY",
+      "ENHANCES BATTERY LIFE UP TO 70%",
+      "INPUT MAINS PROTECTION",
+      "INTELLIGENT THERMAL MANAGEMENT SYSTEM",
+    ],
+    Compactable: [
+      "COMPACTABLE : ",
+      " Hospital ,",
+      " IT Centers ,",
+      " Labs ,",
+      " Factory",
+      "etc.",
+    ],
+    protection: [
+      "PROTECTION : ",
+      " OVERLOAD/SHORT CIRCUIT , ",
+      " OVERCHARGE AND DISCHARGE PROTECTION",
+    ],
+    features2: [
+      "CAPACITY : 150 VA - 10000 VA",
+      "VOLTAGE : 24 VDC - 120 VDC",
+      "3 YEARS WARRANTY",
+    ],
+    Image:
+      "https://5.imimg.com/data5/SELLER/Default/2022/4/MA/WC/RF/18017009/luminous-zolt-1700-home-pure-sinewave-inverter.jpg",
+  },
+  // Add more UPS products...
+];
+const solarData = [
+  {
+    name: "SERIES SOLAR",
+    sub_name: "INBUILT SOLAR PCU",
+    slogan:
+      "Tezla solar ups range is a hybrid that intelligently uses grid and solar power with the ablity to operate in a wide voltage range, Tezla solar is the ideal starter solar solution for home & office appliances.",
+    features1: [
+      "ISOT TECHNOLOGY",
+      "FAST CHARGING",
+      "ECO & UPS MODE",
+      "SAFETY & PROTECTION",
+      "PURE SINE WAVE OUTPUT",
+    ],
+    features2: [
+      "Voltage : 120 VDC - 48 VDC",
+      "Max Champ : 30A ",
+      "Max Panel Volt : 50PV - 200PV ",
+      "Warranty : 3 Years",
+    ],
+    Image:
+      "https://leaderbattery.com/wp-content/uploads/2023/03/1175-1024x1024.png",
+  },
+  // Add more UPS products...
+];
+const mpptData = [
+  {
+    name: "SERIES 12V",
+    sub_name: "RESIDENTIAL & COMMERCIAL",
+    slogan:
+      "Tezla home ups range is available in a variety of power configurations to meet power back-up requirements for all homes and offices. All our power back-up for home office products go through good quality control and come with after-sales support and warranty Jive the unlimited energy lifestyle with Tezla home-ups.based on IPS (Intely power saving) technology. This saves so much electricity.",
+    features1: [
+      "SPECIAL FEATURES :",
+      "IPS TECHNOLOGY",
+      "32 BIT",
+      "INPUT MAINS PROTECTION THROUGH-MCB",
+      "CHARGING COMMENCES EVEN LOW AS 110 AC",
+      "SMART CHARGING TECHNOLOGY",
+    ],
+    features2: [
+      "OVERLOAD / SHORT CIRCUIT",
+      "SMART THERMAL MANAGEMENT SYSTEM",
+      "OVERCHARGE AND DISCHARGE PROTECTION",
+      "CAPACITY : 750 VA - 1300 VA",
+    ],
+    Image: "/home-ups.jpg",
   },
   // Add more UPS products...
 ];
@@ -100,15 +194,18 @@ const PreviewDetails = () => {
     productData = batteryData;
   } else if (category === "Home Ups") {
     productData = upsData;
+  } else if (category === "HKVA Inverter") {
+    productData = hkvaData;
+  } else if (category === "Solar PCU") {
+    productData = solarData;
+  } else if (category === "MPPT") {
+    productData = mpptData;
   }
 
   return (
     <div className="preview container mx-0 px-0 mt-5">
       {productData.map((product, index) => (
-        <div
-          className="preview-main-card rounded-2 card my-5"
-          key={index}
-        >
+        <div className="preview-main-card rounded-2 card my-5" key={index}>
           {/* <div
             className="card-header"
             style={{
@@ -128,7 +225,7 @@ const PreviewDetails = () => {
             </p>
 
             <div className="detail-section justify-content-center text-center pt-4">
-              <div className="d-flex detail-main justify-content-center">
+              <div className="d-flex detail-main align-content-center align-items-center justify-content-center">
                 <div className="detail-sub col-md-5">
                   <ul
                     className="list-unstyled fw-bold text-start"
@@ -140,12 +237,25 @@ const PreviewDetails = () => {
                   </ul>
                 </div>
                 <div className="detail-sub-img col-md-5">
-                  <img src={product.Image} alt="" className="img-fluid rounded-4" />
+                  <img
+                    src={product.Image}
+                    alt=""
+                    className="img-fluid rounded-4"
+                  />
                 </div>
               </div>
 
+
+              <div className="pt-5">
+                <div className="pb-2">
+                  <h5 className="fw-bold">{product.Compactable}</h5>
+                </div>
+                <div className="fw-bold pt-2 ">{product.protection}</div>
+              </div>
+
+
               <div className="text-center pt-5">
-                <Link to={`/products/${category}`}>
+                <Link >
                   <button className="btn btn-primary rounded-5 me-3">
                     View All Variants
                   </button>
