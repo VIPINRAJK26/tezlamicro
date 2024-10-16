@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
 
 function About() {
+  const [showFullContent, setShowFullContent] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, 
+      once: true,
     });
   }, []);
 
+  const toggleContent = () => {
+    setShowFullContent((prev) => !prev);
+  };
+
   return (
     <section>
-      <div className=" p-3 p-md-5 d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
+      <div className="p-3 p-md-5 d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
         <div
           className="about-left col-12 col-md-6 rounded-4"
           data-aos="zoom-in"
@@ -31,24 +37,30 @@ function About() {
             development to customer service. Tezla stands as a symbol of
             reliability, powering homes, businesses, and industries worldwide
             with dependable energy solutions that empower a brighter, greener
-            future. <br /> <br />
-            Tezla's tubular batteries, distinguished by their C10 and C20
-            ratings, epitomize durability and efficiency, providing a seamless
-            power supply over varying time intervals. Whether for residential,
-            commercial, or industrial applications, Tezla's batteries are
-            engineered to deliver consistent and enduring performance. <br />{" "}
-            <br />
-            In addition to the provision of advanced tubular batteries, Tezla
-            extends its expertise to the realm of inverters, UPS, and solar
-            power units, establishing a holistic approach to energy management.
-            Our innovative products and systems are crafted with precision,
-            incorporating the latest technologies to ensure efficient
-            performance and reliability. We offer a promise of uninterrupted
-            power, energy efficiency, and a sustainable future.
+            future. {!showFullContent && <span>... </span>}
+            {showFullContent && (
+              <>
+                <br /> <br />
+                Tezla's tubular batteries, distinguished by their C10 and C20
+                ratings, epitomize durability and efficiency, providing a
+                seamless power supply over varying time intervals. Whether for
+                residential, commercial, or industrial applications, Tezla's
+                batteries are engineered to deliver consistent and enduring
+                performance. <br /> <br />
+                In addition to the provision of advanced tubular batteries,
+                Tezla extends its expertise to the realm of inverters, UPS, and
+                solar power units, establishing a holistic approach to energy
+                management. Our innovative products and systems are crafted with
+                precision, incorporating the latest technologies to ensure
+                efficient performance and reliability. We offer a promise of
+                uninterrupted power, energy efficiency, and a sustainable
+                future.
+              </>
+            )}
           </p>
 
-          <a href="#" className="view-more">
-            View More
+          <a href="#" className="view-more" onClick={toggleContent}>
+            {showFullContent ? "View Less" : "View More"}
           </a>
         </div>
 
