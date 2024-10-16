@@ -1,8 +1,8 @@
 import React from "react";
-import "./PreviewDetails.css";
 import { Link, useParams } from "react-router-dom";
+import "./PreviewDetails.css";
 
-
+// Example product data for various categories
 const batteryData = [
   {
     name: "Nikola",
@@ -12,72 +12,15 @@ const batteryData = [
       "Ultra Low Maintenance",
       "Ecofriendly",
       "Specially designed for Solar Power",
-      "Designed for all types of UPS and inverters",
     ],
     features2: [
       "Advance Dura Core",
       "Capacity: 135 Ah - 150 Ah",
-      "Tubular Type: Long Backup",
       "Warranty: Upto 42 Months",
     ],
-    Image:
-      "https://img.freepik.com/free-photo/passport-red-case-toy-plane_23-2148169798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    Image: "https://path_to_image.jpg",
   },
-  {
-    name: "Max",
-    slogan:
-      "Uninterrupted energy for every moment, batteries for reliable performance.",
-    features1: [
-      "Ultra Low Maintenance",
-      "Ecofriendly",
-      "Specially designed for Solar Power",
-      "Designed for all types of UPS and inverters",
-    ],
-    features2: [
-      "Advance Dura Core",
-      "Capacity: 135 Ah - 150 Ah",
-      "Tubular Type: Long Backup",
-      "Warranty: Upto 42 Months",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/passport-red-case-toy-plane_23-2148169798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
-  {
-    name: "Power",
-    slogan: "Charge up with confidence, exceptional durability and longevity.",
-    features1: [
-      "Ultra Low Maintenance",
-      "Ecofriendly",
-      "Specially designed for Solar Power",
-      "Designed for all types of UPS and inverters",
-    ],
-    features2: [
-      "Advance Dura Core",
-      "Capacity: 135 Ah - 150 Ah",
-      "Tubular Type: Long Backup",
-      "Warranty: Upto 42 Months",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/passport-red-case-toy-plane_23-2148169798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
-  {
-    name: "Extreme G",
-    slogan: "Maximize your Up-time with the High-Performance.",
-    features1: [
-      "Ultra Low Maintenance",
-      "Ecofriendly",
-      "Specially designed for Solar Power",
-      "Designed for all types of UPS and inverters",
-    ],
-    features2: [
-      "Advance Dura Core",
-      "Capacity: 135 Ah - 150 Ah",
-      "Tubular Type: Long Backup",
-      "Warranty: Upto 42 Months",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/passport-red-case-toy-plane_23-2148169798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
+  // Add more battery products...
 ];
 
 const upsData = [
@@ -88,76 +31,38 @@ const upsData = [
     features2: [
       "Technology: Pure Sinewave",
       "Range: 1500 VA",
-      "Comfortable Battery: Flat, Tubular & SMF",
       "Warranty: 3 Years",
     ],
-    Image:
-      "https://img.freepik.com/free-photo/top-view-airplane-with-copy-space_23-2148608798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
+    Image: "https://path_to_image.jpg",
   },
-  {
-    name: "Fighter",
-    slogan: "Switch on to a brighter tomorrow with our inverter or UPS.",
-    features1: ["IPS TECHNOLOGY", "32 BIT", "OVERLOAD PROTECTION"],
-    features2: [
-      "Technology: Pure Sinewave",
-      "Range: 1500 VA",
-      "Comfortable Battery: Flat, Tubular & SMF",
-      "Warranty: 3 Years",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/top-view-airplane-with-copy-space_23-2148608798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
-  {
-    name: "Hurricane",
-    slogan: "Restoring Power , Empowering Each Journey.",
-    features1: ["IPS TECHNOLOGY", "32 BIT", "OVERLOAD PROTECTION"],
-    features2: [
-      "Technology: Pure Sinewave",
-      "Range: 1500 VA",
-      "Comfortable Battery: Flat, Tubular & SMF",
-      "Warranty: 3 Years",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/top-view-airplane-with-copy-space_23-2148608798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
-  {
-    name: "Radeon",
-    slogan: "Uninterrupted Power, Unmatched Reliability.",
-    features1: ["IPS TECHNOLOGY", "32 BIT", "OVERLOAD PROTECTION"],
-    features2: [
-      "Technology: Pure Sinewave",
-      "Range: 1500 VA",
-      "Comfortable Battery: Flat, Tubular & SMF",
-      "Warranty: 3 Years",
-    ],
-    Image:
-      "https://img.freepik.com/free-photo/top-view-airplane-with-copy-space_23-2148608798.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid",
-  },
+  // Add more UPS products...
 ];
 
+// Add more data arrays for other categories if needed
+
 const PreviewDetails = () => {
-  const { category } = useParams();
+  const { category } = useParams(); 
 
+  // Map categories to product data
   let productData = [];
-
-  if (category === "Batteries") {
+  if (category === "Tubular Battery") {
     productData = batteryData;
-  } else if (category === "Home Ups") {
+  } else if (category === "Inverter/Home UPS") {
     productData = upsData;
-  }
+  } // Add more conditions for other categories
 
   return (
     <div className="preview container mx-0 px-0 mt-5">
       <div className="preview-main row">
         {productData.map((product, index) => (
-          <div className="col-md-8 col-lg-6 col-12 p-1 mb-4 " key={index}>
+          <div className="col-md-8 col-lg-6 col-12 p-1 mb-4" key={index}>
             <div
               className="preview-main-card rounded-0 card bg-info"
               style={{
                 backgroundImage: `url(${product.Image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                height: "550px", 
+                height: "550px",
               }}
             >
               <div className="preview-body ps-5 card-body">
@@ -169,7 +74,10 @@ const PreviewDetails = () => {
                 </p>
 
                 <div className="detail-section">
-                  <ul className="list-unstyled text-white fw-bold" style={{lineHeight:"30px"}}>
+                  <ul
+                    className="list-unstyled text-white fw-bold"
+                    style={{ lineHeight: "30px" }}
+                  >
                     {product.features1.map((feature, idx) => (
                       <li key={idx}>{feature}</li>
                     ))}

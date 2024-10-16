@@ -14,7 +14,7 @@ const ContactUs = () => {
         <div className="contact-mid justify-content-center">
           <FeedbackForm />
         </div>
-        <div className="contact-bottom">
+        <div className="contact-bottom ps-md-2">
           <h5 className=" text-md-start">TEZLA Energry Pvt. Ltd. </h5>
           <ul className="list-unstyled text-md-start">
             <li>Head Office</li>
