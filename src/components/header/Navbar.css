@@ -12,8 +12,9 @@
 .nav-main {
   position: relative;
   left: 22%;
-  gap: 40px;
-  font-size: 1.1rem;
+  gap: 35px;
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 .nav-item {

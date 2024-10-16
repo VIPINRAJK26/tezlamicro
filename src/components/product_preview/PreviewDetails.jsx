@@ -255,7 +255,7 @@ const PreviewDetails = () => {
 
 
               <div className="text-center pt-5">
-                <Link >
+                <Link to={`/products/${category}`}>
                   <button className="btn btn-primary rounded-5 me-3">
                     View All Variants
                   </button>

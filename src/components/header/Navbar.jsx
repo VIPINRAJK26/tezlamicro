@@ -33,11 +33,11 @@ const CustomNavbar = () => {
           <Nav className="nav-main">
             <Nav.Link>
               <Link to="/" className="text-decoration-none text-black nav-item">
-                About
+                ABOUT
               </Link>
             </Nav.Link>
 
-            <NavDropdown title="Products" id="home-solutions-dropdown">
+            <NavDropdown title="PRODUCTS" className="text-black" id="home-solutions-dropdown">
               {categories.map((category, index) => (
                 <NavDropdown.Item key={index}>
                   <Link
@@ -51,13 +51,13 @@ const CustomNavbar = () => {
             </NavDropdown>
 
             <Nav.Link>
-              <Link to="/dealer" className="text-decoration-none text-dark nav-item">
-                Dealer Locator
+              <Link to="/dealer" className="text-decoration-none text-black nav-item">
+                DEALER LOCATOR
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to="/contact" className="text-decoration-none text-black nav-item">
-                Contact
+                CONTACT
               </Link>
             </Nav.Link>
           </Nav>

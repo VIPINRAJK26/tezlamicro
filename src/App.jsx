@@ -26,8 +26,8 @@ function App() {
           <Suspense>
             <Routes>
               <Route path="/" element={<Landing />} />
-              {/* <Route path="/products/:category" element={<Products />} /> */}
-              {/* <Route path="/single" element={<Single />} /> */}
+              <Route path="/products/:category" element={<Products />} />
+              <Route path="/single" element={<Single />} />
               <Route path="/dealer" element={<Store />} />
               <Route path="/preview/:category" element={<Preview />} />{" "}
               {/* This route works for dynamic preview */}
