@@ -6,7 +6,7 @@
 }
 
 .navbar-logo {
-  width: 120px;
+  width: 150px;
 }
 
 .nav-main {
@@ -34,7 +34,7 @@
 
 .nav-main .nav-item:hover,
 .nav-main .nav-item:focus,
-.active {
+.nav-main .nav-item.active {
   color: red;
   border-bottom: 2px solid red;
 }

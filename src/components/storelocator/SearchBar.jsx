@@ -23,7 +23,7 @@ const Locator = () => {
   return (
     <div className="locator-container mt-5 d-flex justify-content-center gap-5">
       <div>
-        <h3 className="m-0 align-content-center fw-bold text-muted pt-2 align-items-center">Locate a nearest dealer in your city</h3>
+        <p className="m-0 align-content-center fw-bold text-muted pt-2 align-items-center">Locate a nearest dealer in your city</p>
       </div>
       <div className="dropdowns">
         <select

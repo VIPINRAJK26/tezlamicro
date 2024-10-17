@@ -5,12 +5,28 @@ import "./About.css";
 
 function About() {
   const [showFullContent, setShowFullContent] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
+
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsMobileView(true);
+        setShowFullContent(false); 
+      } else {
+        setIsMobileView(false);
+        setShowFullContent(true); 
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
+
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   const toggleContent = () => {
@@ -18,14 +34,14 @@ function About() {
   };
 
   return (
-    <section >
+    <section>
       <div className="container d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
         <div
           className="about-left col-12 col-md-6 align-content-center rounded-4"
           data-aos="zoom-in"
         >
-          <h3 className="pe-1 py-3 fs-4 fw-bold">About Us</h3>
-          <p className="about-left-para">
+          <h2 className="pe-1 py-3  fw-bold">About Us</h2>
+          <p className="about-left-para pe-2">
             Tezla Battery and Inverter is a pioneer in advanced solutions for
             energy storage and conversion. With a relentless commitment to
             innovation, our company designs and produces high-performance
@@ -59,9 +75,16 @@ function About() {
             )}
           </p>
 
-          <a href="#" className="view-more" onClick={toggleContent}>
-            {showFullContent ? "View Less" : "View More"}
-          </a>
+          {/* Only show the "View More" button in mobile view */}
+          {isMobileView && (
+            <a
+              href="#"
+              className="view-more mobile-only"
+              onClick={toggleContent}
+            >
+              {showFullContent ? "View Less" : "View More"}
+            </a>
+          )}
         </div>
 
         <div

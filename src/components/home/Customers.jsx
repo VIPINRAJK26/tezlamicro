@@ -100,10 +100,10 @@ const Customers = () => {
       </div> */}
 
       <div className=" chairman-message d-md-flex d-block">
-        <div className="col-md-6 col-12 ">
-          <h1 className="text-center fw-bold  w-100 m-auto ">
-            High-Tech Machinery For Innovative Solutions
-          </h1>
+        <div className="chariman-head col-md-6 col-12 ">
+          <h2 className="text-center fw-bold  w-100 m-auto ">
+            High-Tech Machinery For <br /> Innovative Solutions
+          </h2>
           <p className="w-75  m-auto pt-2 pt-md-5 ">
             "we always stand for investing in Advanced Technologies and
             infrastructure to stay ahead of the curve. Our commitment to quality

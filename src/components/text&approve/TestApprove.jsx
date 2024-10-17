@@ -3,15 +3,15 @@ import "./testapprove.css";
 
 const TestApprove = () => {
   return (
-    <div className="container text-center py-md-5 pt-5 mt-4 mt-md-0">
-      <h1 className="fw-bold">Tested & Approved</h1>
-      <h2 className="text-white approve fw-bold">
+    <div className="container test-approve text-center   mt-md-0">
+      <h2 className="fw-bold ">Tested & Approved</h2>
+      <p className="text-black approve fw-medium">
         <span>
           Tezla's products are Rigorously tested and approved. Ensuring
           reliability and performance. Trusted solutions for energy storage and
           conversion needs
         </span>
-      </h2>
+      </p>
     </div>
   );
 };

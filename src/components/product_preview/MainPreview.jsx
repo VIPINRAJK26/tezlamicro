@@ -51,8 +51,8 @@ const MainPreview = () => {
           style={{ width: "100%" }}
         />
       </div>
-      <div className="w-75 m-auto preview-data">
-        <p className="w-75 m-auto">
+      <div className="w-75 m-auto preview-data my-4">
+        <p className="w-75 m-auto ">
           {details[category] || "Details not available."}
         </p>
       </div>

@@ -7,7 +7,7 @@ const StoreLocator = () => {
     <div className="py-md-5 py-3 container  ">
       <div className="locator-top pb-5">
         <div className="locator-top-head text-center">
-          <h1 className="fw-bold display-4">We are here to Serve you</h1>
+          <h2 className="fw-bold ">We are here to Serve you</h2>
         </div>
       </div>
       <div className="locator-bottom ">

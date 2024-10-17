@@ -56,8 +56,8 @@ const CardSlider = () => {
   return (
     <div className="card-slider  container justify-content-center p-2 p-md-5 pb-5">
       {/* Headings */}
-      <h2 className="text-center display-6 fw-bold pt-5 pb-3">Our Products</h2>
-      <ul className="nav nav-pills justify-content-center my-3">
+      <h2 className="text-center  fw-bold pt-5 pb-3">Our Products</h2>
+      {/* <ul className="nav nav-pills justify-content-center my-3">
         {categories.map((category, index) => (
           <li key={index} className="nav-item">
             <button
@@ -68,7 +68,7 @@ const CardSlider = () => {
             </button>
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* Card Carousel */}
       <Carousel

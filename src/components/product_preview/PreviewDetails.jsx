@@ -198,7 +198,7 @@ const PreviewDetails = () => {
   }
 
   return (
-    <div className="preview container mx-0 px-0 mt-1">
+    <div className="preview container mx-0 px-0 mt-5">
       {productData.map((product, index) => (
         <div className="preview-main-card rounded-2 card my-5" key={index}>
           {/* <div
@@ -210,18 +210,18 @@ const PreviewDetails = () => {
               height: "300px",
             }}
           /> */}
-          <div className="preview-body card-body p-5">
+          <div className="preview-body card-body px-5 pt-5">
             <h2 className="fw-bold card-title text-center">{product.name}</h2>
             <h4 className="fw-bold card-title text-center">
               {product.sub_name}
             </h4>
-            <p className="card-text fw-medium  pt-4 ">
+            <p className="card-text fw-medium d-none ">
               {product.slogan}
             </p>
 
-            <div className="detail-section justify-content-center text-center pt-4">
+            <div className="detail-section justify-content-center text-center pt-2">
               <div className="d-md-flex detail-main align-content-center align-items-center justify-content-center">
-                <div className="detail-sub col-md-5 pt-5">
+                <div className="detail-sub col-md-5 pt-1">
                   <ul
                     className="list-unstyled fw-bold text-md-start"
                     style={{ lineHeight: "30px" }}
@@ -241,15 +241,15 @@ const PreviewDetails = () => {
               </div>
 
 
-              <div className="pt-3">
+              <div className="pt-2">
                 <div className="pb-2">
                   <h5 className="fw-bold">{product.Compactable}</h5>
                 </div>
-                <div className="fw-bold pt-2 ">{product.protection}</div>
+                <div className="fw-bold pt-2">{product.protection}</div>
               </div>
 
 
-              <div className="text-center pt-5">
+              <div className="text-center pt-2">
                 <Link to={`/products/${category}`}>
                   <button className="btn btn-primary rounded-5 me-3">
                     View All Variants

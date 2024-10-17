@@ -10,7 +10,7 @@
 
 .about-left p {
   text-align: justify;
-  max-width: 75%;
+  font-size: 1.1rem;
 }
 
 .view-more {
@@ -71,6 +71,14 @@
     max-width: 100%;
   }
 }
+
+/* Show 'View More' only on mobile */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 
 /* @media (max-width: 576px) {
   .about-right p {

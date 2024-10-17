@@ -21,8 +21,8 @@ const BatterySection = () => {
 
   return (
     <div className="battery-section pt-5 bg-white rounded-bottom-5 container">
-      <h2 className="section-title text-black">Plant Views</h2>
-      <p className="text-center pb-4 h4 fw-medium">
+      <h2 className="section-title  text-black">Plant Views</h2>
+      <p className="text-center pb-4  fw-medium">
         Innovation hub with very advanced technology. Efficient, scalable
         production. Rigorous quality control ensures reliable batteries and
         inverters
