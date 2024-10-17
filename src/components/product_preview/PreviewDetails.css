@@ -47,7 +47,7 @@
   padding: 10px 15px;
   margin: 5px;
   background-color: #f1f1f1;
-  border-radius: 0px; 
+  border-radius: 2px; 
   border: 1px solid #ddd; 
   font-size: 14px;
   color: #333;
@@ -55,9 +55,10 @@
 }
 
 .feature-box:hover {
-  background-color: #cbe1ef; 
+  background-color: #e10e0eec; 
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.04);
+  color: white;
   transition: all .3s ease-in-out;
 }
 
