@@ -76,7 +76,7 @@ const Customers = () => {
   return (
     <div
       ref={containerRef}
-      className="full-width-container justify-content-center py-5 "
+      className="container high-tech justify-content-center py-5 "
     >
       {/* <div className="overlay">
         <div className="overlay-content">
@@ -100,11 +100,11 @@ const Customers = () => {
       </div> */}
 
       <div className=" chairman-message d-md-flex d-block">
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12 ">
           <h1 className="text-center fw-bold  w-100 m-auto ">
             High-Tech Machinery For Innovative Solutions
           </h1>
-          <p className="w-75 text-center m-auto pt-2 pt-md-5 ">
+          <p className="w-75  m-auto pt-2 pt-md-5 ">
             "we always stand for investing in Advanced Technologies and
             infrastructure to stay ahead of the curve. Our commitment to quality
             is unwavering, ensuring that all our products meet high performance

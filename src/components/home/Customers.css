@@ -52,6 +52,10 @@ body::-webkit-scrollbar {
   /* transition: opacity 0.3s ease; */
 }
 
+.chairman-message p{
+  text-align: justify;
+}
+
 /* .full-width-container:hover .chairman-message {
   display: block;
 } */

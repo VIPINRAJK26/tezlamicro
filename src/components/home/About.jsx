@@ -18,14 +18,14 @@ function About() {
   };
 
   return (
-    <section>
-      <div className="p-3 p-md-5 d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
+    <section >
+      <div className="container d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
         <div
-          className="about-left col-12 col-md-6 rounded-4"
+          className="about-left col-12 col-md-6 align-content-center rounded-4"
           data-aos="zoom-in"
         >
-          <h3 className="px-4 py-3 fs-4 fw-bold">About Us</h3>
-          <p className="px-4">
+          <h3 className="pe-1 py-3 fs-4 fw-bold">About Us</h3>
+          <p className="about-left-para">
             Tezla Battery and Inverter is a pioneer in advanced solutions for
             energy storage and conversion. With a relentless commitment to
             innovation, our company designs and produces high-performance
@@ -65,7 +65,7 @@ function About() {
         </div>
 
         <div
-          className="about-right col-12 col-md-6 mt-4 mt-md-4 ms-md-3"
+          className="about-right col-12 col-md-6 mt-4 mt-md-0"
           data-aos="zoom-in"
         >
           <img
