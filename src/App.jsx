@@ -30,7 +30,6 @@ function App() {
               <Route path="/single" element={<Single />} />
               <Route path="/dealer" element={<Store />} />
               <Route path="/preview/:category" element={<Preview />} />{" "}
-              {/* This route works for dynamic preview */}
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>

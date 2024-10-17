@@ -73,7 +73,6 @@ const batteryData = [
     ],
     Image: "/tez-battery.jpg",
   },
-  // Add more battery products...
 ];
 
 const upsData = [
@@ -98,7 +97,6 @@ const upsData = [
     ],
     Image: "/home-ups.jpg",
   },
-  // Add more UPS products...
 ];
 const hkvaData = [
   {
@@ -135,7 +133,6 @@ const hkvaData = [
     Image:
       "https://5.imimg.com/data5/SELLER/Default/2022/4/MA/WC/RF/18017009/luminous-zolt-1700-home-pure-sinewave-inverter.jpg",
   },
-  // Add more UPS products...
 ];
 const solarData = [
   {
@@ -159,7 +156,6 @@ const solarData = [
     Image:
       "https://leaderbattery.com/wp-content/uploads/2023/03/1175-1024x1024.png",
   },
-  // Add more UPS products...
 ];
 const mpptData = [
   {
@@ -183,7 +179,6 @@ const mpptData = [
     ],
     Image: "/home-ups.jpg",
   },
-  // Add more UPS products...
 ];
 
 const PreviewDetails = () => {

@@ -15,7 +15,6 @@ const CustomNavbar = () => {
     { name: "MPPT'S", path: "MPPT" },
   ];
 
-  // Close navbar when clicking outside of it
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -78,7 +77,7 @@ const CustomNavbar = () => {
                   <Link
                     to={`/preview/${category.path}`}
                     className="text-decoration-none text-black"
-                    onClick={() => setNavbarOpen(false)} // Close navbar on link click
+                    onClick={() => setNavbarOpen(false)} 
                   >
                     {category.name}
                   </Link>
@@ -90,7 +89,7 @@ const CustomNavbar = () => {
               <Link
                 to="/dealer"
                 className="text-decoration-none text-black nav-item"
-                onClick={() => setNavbarOpen(false)} // Close navbar on link click
+                onClick={() => setNavbarOpen(false)} 
               >
                 DEALER LOCATOR
               </Link>
@@ -99,7 +98,7 @@ const CustomNavbar = () => {
               <Link
                 to="/contact"
                 className="text-decoration-none text-black nav-item"
-                onClick={() => setNavbarOpen(false)} // Close navbar on link click
+                onClick={() => setNavbarOpen(false)} 
               >
                 CONTACT
               </Link>

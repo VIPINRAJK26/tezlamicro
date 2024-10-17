@@ -1,5 +1,5 @@
 .preview-main-card {
-  margin-bottom: 20px; /* Space between cards */
+  margin-bottom: 20px; 
   background-image: linear-gradient(
     to bottom,
     rgb(12, 2, 50),
@@ -14,7 +14,7 @@
 }
 
 .card-header {
-  border-radius: 0.5rem 0.5rem 0 0; /* Rounded corners for the header */
+  border-radius: 0.5rem 0.5rem 0 0; 
 }
 
 .preview-body {
@@ -26,7 +26,7 @@
 }
 
 .text-start {
-  margin-top: 20px; /* Space for buttons */
+  margin-top: 20px; 
 }
 
 .detail-sub-img img {

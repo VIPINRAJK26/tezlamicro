@@ -2,9 +2,8 @@ import React from "react";
 // import ProductFilter from "../components/products/ProductFilter";
 import ProductCard from "../components/products/ProductCard";
 import { Row, Col } from "react-bootstrap";
-import "./ProductPage.css"
+import "./ProductPage.css";
 import { useParams } from "react-router-dom";
-
 
 const batteryData = [
   {
@@ -252,12 +251,9 @@ const mpptData = [
   },
 ];
 
-const title=[
-  {"Batteries":"",}
-]
+
 
 const Products = () => {
-  
   const { category } = useParams();
 
   let productData = [];
@@ -273,14 +269,31 @@ const Products = () => {
     productData = mpptData;
   }
 
+  const details = {
+    Batteries:
+      " Tubular Batteries",
+    "Home Ups":
+      " Home UPS",
+    "HKVA Inverter":
+      "HKVA Inverters.",
+    "Solar PCU":
+      "Solar PCU ",
+    MPPT: "s",
+  };
+
   return (
-    <div className="product-page  text-center d-flex pt-5">
+    <div className="product-page  justify-content-center text-center d-flex pt-5">
       <div className="justify-content-center d-flex">
         {/* <Col md={3}>
           <ProductFilter />
         </Col> */}
         <Col md={10}>
-          <Row>
+          <Row className="justify-content-center">
+            <div className="col-md-10 justify-content-center text-center">
+              <h1 className="fw-bold text-muted text-center pb-5">
+                {details[category] || "no data"}
+              </h1>
+            </div>
             {productData.map((product, index) => (
               <Col key={index} xs={12} sm={6} md={4} lg={3}>
                 <ProductCard {...product} />
@@ -292,7 +305,5 @@ const Products = () => {
     </div>
   );
 };
-
-
 
 export default Products;

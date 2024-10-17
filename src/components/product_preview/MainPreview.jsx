@@ -5,7 +5,6 @@ import "./MainPreview.css";
 const MainPreview = () => {
   const { category } = useParams();
 
-  // Define images for each category
   const images = {
     Batteries: "/home-slider.jpg",
     "Home Ups":
@@ -40,7 +39,6 @@ const MainPreview = () => {
     MPPT: "Tezla Solar PCU offers an efficient solution for harnessing solar energy while ensuring reliable power management. Designed for both residential and commercial applications, it seamlessly integrates solar power with grid or battery backup, providing uninterrupted electricity, reducing energy costs, and promoting sustainable, eco-friendly power usage.",
   };
 
-  // Fallback image if category doesn't match
   const defaultImage = "https://www.example.com/default-image.jpg";
 
   return (
