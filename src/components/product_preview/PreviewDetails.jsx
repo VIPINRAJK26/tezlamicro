@@ -198,7 +198,7 @@ const PreviewDetails = () => {
   }
 
   return (
-    <div className="preview container mx-0 px-0 mt-5">
+    <div className="preview container mx-0 px-0 mt-md-0">
       {productData.map((product, index) => (
         <div className="preview-main-card rounded-2 card my-5" key={index}>
           {/* <div
@@ -215,19 +215,16 @@ const PreviewDetails = () => {
             <h4 className="fw-bold card-title text-center">
               {product.sub_name}
             </h4>
-            <p className="card-text fw-medium d-none ">
-              {product.slogan}
-            </p>
+            <p className="card-text fw-medium d-none ">{product.slogan}</p>
 
             <div className="detail-section justify-content-center text-center pt-2">
               <div className="d-md-flex detail-main align-content-center align-items-center justify-content-center">
                 <div className="detail-sub col-md-5 pt-1">
-                  <ul
-                    className="list-unstyled fw-bold text-md-start"
-                    style={{ lineHeight: "30px" }}
-                  >
+                  <ul className="list-unstyled fw-bold text-md-start">
                     {product.features1.map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
+                      <li key={idx} className="feature-box">
+                        {feature}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -240,7 +237,6 @@ const PreviewDetails = () => {
                 </div>
               </div>
 
-
               <div className="pt-2">
                 <div className="pb-2">
                   <h5 className="fw-bold">{product.Compactable}</h5>
@@ -248,10 +244,9 @@ const PreviewDetails = () => {
                 <div className="fw-bold pt-2">{product.protection}</div>
               </div>
 
-
-              <div className="text-center pt-2">
+              <div className="text-center view-all pt-2">
                 <Link to={`/products/${category}`}>
-                  <button className="btn btn-primary rounded-5 me-3">
+                  <button className="btn btn-primary  rounded-5 me-3">
                     View All Variants
                   </button>
                 </Link>

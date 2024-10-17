@@ -1,11 +1,17 @@
 .preview-main-card {
   margin-bottom: 20px; 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgb(12, 2, 50),
     rgba(52, 5, 221, 0.9)
-  );
+  ); */
+  background-color: rgb(12, 86, 196);
   color: white;
+}
+
+.view-all button{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+
 }
 
 .card-text {
@@ -35,6 +41,26 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.feature-box {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  border-radius: 0px; 
+  border: 1px solid #ddd; 
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.feature-box:hover {
+  background-color: #cbe1ef; 
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.04);
+  transition: all .3s ease-in-out;
+}
+
 
 @media (max-width: 768px) {
   .card-text {

@@ -42,7 +42,7 @@ const MainPreview = () => {
   const defaultImage = "https://www.example.com/default-image.jpg";
 
   return (
-    <div className="header-section mb-5">
+    <div className="header-section mb-md-0">
       <div>
         <img
           src={images[category] || defaultImage}
@@ -51,8 +51,8 @@ const MainPreview = () => {
           style={{ width: "100%" }}
         />
       </div>
-      <div className="w-75 m-auto preview-data my-4">
-        <p className="w-75 m-auto ">
+      <div className=" preview-data mt-md-4">
+        <p className="">
           {details[category] || "Details not available."}
         </p>
       </div>
