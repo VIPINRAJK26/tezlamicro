@@ -1,11 +1,11 @@
 .preview-data p {
   position: relative;
-  text-align: center;
+  text-align: justify;
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
   animation: fadeIn 2s ease-in forwards; 
-  max-width: 90%;
+  /* max-width: 90%; */
   margin: auto;
 }
 

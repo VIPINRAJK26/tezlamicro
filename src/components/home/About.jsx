@@ -92,7 +92,7 @@ function About() {
           data-aos="zoom-in"
         >
           <img
-            src="https://img.freepik.com/free-psd/abstract-background-design_1297-82.jpg?ga=GA1.2.1208105082.1712396076&semt=ais_hybrid"
+            src="https://img.freepik.com/free-vector/red-halftone-dot-pattern-background-vector-design-from-circles-varying-sizes_1164-1186.jpg?size=338&ext=jpg"
             alt=""
             className="img-fluid rounded-4"
           />

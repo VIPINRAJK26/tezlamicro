@@ -97,9 +97,5 @@ body::-webkit-scrollbar {
     font-size: 1rem;
   }
 
-  .full-width-container {
-    height: 90vh; 
-    position: relative;
-    overflow: visible;
-  }
+
 }

@@ -5,6 +5,7 @@
 
 .battery-section P{
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .section-title {
@@ -48,5 +49,8 @@
 @media (max-width: 768px) {
   .battery-grid {
     grid-template-columns: 1fr;
+  }
+  .battery-section p{
+    text-align: justify;
   }
 }

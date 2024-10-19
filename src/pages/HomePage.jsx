@@ -30,7 +30,7 @@ const HomePage = () => {
         <Service />
       </div>
       <div>{/* <Awards /> */}</div>
-      <div className="py-4" >
+      <div className="py-0" >
         <Customers />
       </div>
       <div>{/* <HighlightSpecifications/> */}</div>

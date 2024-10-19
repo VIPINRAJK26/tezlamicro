@@ -4,7 +4,7 @@ import "./PreviewDetails.css";
 
 const batteryData = [
   {
-    name: "C20 TALL TUBULAR BATTERIES",
+    series: "C20 TALL TUBULAR BATTERIES",
     sub_name: "INVERTER & HOME UPS",
     slogan:
       "Tezla Batteries are made with advanced features to ensure efficient performance of power backup systems such as inverters, UPS, solar systems, and commercial and industrial power backups. These batteries ensure an uninterrupted energy supply for any segments of General and critical usage.",
@@ -28,7 +28,7 @@ const batteryData = [
     Image: "/tez-battery.jpg",
   },
   {
-    name: "C10 TALL TUBULAR BATTERIES",
+    series: "C10 TALL TUBULAR BATTERIES",
     sub_name: "INVERTER , HOME UPS & SOLAR APPLICATIONS",
     slogan:
       "Tezla Tubular Battery is a high-potential energy storage solution with a 10-hour rate capacity. Engineered for superior performance, this battery combines Tezla's innova¬tion with tubular technology, ensuring extended power backup for residential, com¬mercial, and industrial applications.",
@@ -51,7 +51,7 @@ const batteryData = [
     Image: "/tez-battery.jpg",
   },
   {
-    name: "C20TALL TUBULAR BATTERIES",
+    series: "C10 TALL TUBULAR BATTERIES PREMIUM",
     sub_name: "INVERTER , HOME UPS & SOLAR APPLICATIONS",
     slogan:
       "The versatile CIO Tubular Batteries by Tezla are extensively employed across diverse applications, guaranteeing reliable and efficient power storage. Widely used for running of inverters, UPS, Solar Systems, emergency backups, and any other residential, commercial & industrial power backup systems. Our specific advanced manufacturing technology ensures maximum durability and backup efficiency.",
@@ -77,7 +77,7 @@ const batteryData = [
 
 const upsData = [
   {
-    name: "SERIES 12V",
+    series: "SERIES 12V",
     sub_name: "RESIDENTIAL & COMMERCIAL",
     slogan:
       "Tezla home ups range is available in a variety of power configurations to meet power back-up requirements for all homes and offices. All our power back-up for home office products go through good quality control and come with after-sales support and warranty Jive the unlimited energy lifestyle with Tezla home-ups.based on IPS (Intely power saving) technology. This saves so much electricity.",
@@ -100,7 +100,7 @@ const upsData = [
 ];
 const hkvaData = [
   {
-    name: "SERIES Higher",
+    series: "SERIES Higher",
     sub_name: "HEAVY DUTY INVERTER & UPS SYSTEMS",
     slogan:
       "TEZLA higher(HKVA) offers high-quality and reliable power backup for running office and sensitive equipment",
@@ -136,7 +136,7 @@ const hkvaData = [
 ];
 const solarData = [
   {
-    name: "SERIES SOLAR",
+    series: "SERIES SOLAR",
     sub_name: "INBUILT SOLAR PCU",
     slogan:
       "Tezla solar ups range is a hybrid that intelligently uses grid and solar power with the ablity to operate in a wide voltage range, Tezla solar is the ideal starter solar solution for home & office appliances.",
@@ -159,7 +159,7 @@ const solarData = [
 ];
 const mpptData = [
   {
-    name: "SERIES 12V",
+    series: "SERIES 12V",
     sub_name: "RESIDENTIAL & COMMERCIAL",
     slogan:
       "Tezla home ups range is available in a variety of power configurations to meet power back-up requirements for all homes and offices. All our power back-up for home office products go through good quality control and come with after-sales support and warranty Jive the unlimited energy lifestyle with Tezla home-ups.based on IPS (Intely power saving) technology. This saves so much electricity.",
@@ -182,21 +182,28 @@ const mpptData = [
 ];
 
 const PreviewDetails = () => {
-  const { category } = useParams();
+
+
+  const { category} = useParams();
+
+
+  
+
 
   let productData = [];
-  if (category === "Batteries") {
+  if (category === "TUBULAR BATTERY") {
     productData = batteryData;
-  } else if (category === "Home Ups") {
+  } else if (category === "INVERTER") {
     productData = upsData;
-  } else if (category === "HKVA Inverter") {
+  } else if (category === "HKVA INVERTER") {
     productData = hkvaData;
-  } else if (category === "Solar PCU") {
+  } else if (category === "SOLAR PCU") {
     productData = solarData;
-  } else if (category === "MPPT") {
+  } else if (category === "MPPT S") {
     productData = mpptData;
   }
-
+  
+  
   return (
     <div className="preview container mx-0 px-0 mt-md-0">
       {productData.map((product, index) => (
@@ -211,8 +218,8 @@ const PreviewDetails = () => {
             }}
           /> */}
           <div className="preview-body card-body px-5 pt-5">
-            <h2 className="fw-bold card-title text-center">{product.name}</h2>
-            <h4 className="fw-bold card-title text-center">
+            <h2 className="fw-bold text-white card-title text-center">{product.series}</h2>
+            <h4 className="fw-bold text-white card-title text-center">
               {product.sub_name}
             </h4>
             <p className="card-text fw-medium d-none ">{product.slogan}</p>
@@ -220,9 +227,9 @@ const PreviewDetails = () => {
             <div className="detail-section justify-content-center text-center pt-2">
               <div className="d-md-flex detail-main align-content-center align-items-center justify-content-center">
                 <div className="detail-sub col-md-5 pt-1">
-                  <ul className="list-unstyled fw-bold text-md-start">
+                  <ul className="list-unstyled fw-bold text-md-start  py-md-0 py-4">
                     {product.features1.map((feature, idx) => (
-                      <li key={idx} className="feature-box">
+                      <li key={idx} className="feature-box ">
                         {feature}
                       </li>
                     ))}
@@ -245,8 +252,8 @@ const PreviewDetails = () => {
               </div>
 
               <div className="text-center view-all pt-2">
-                <Link to={`/products/${category}`}>
-                  <button className="btn btn-primary  rounded-5 me-3">
+                <Link to={`/products/${category}/${product.series}`}>
+                  <button className="btn btn-primary mb-3 mb-md-0 rounded-5 me-md-3">
                     View All Variants
                   </button>
                 </Link>

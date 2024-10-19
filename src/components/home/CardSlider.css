@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.card-slider h2{
-  font-size: 1.5rem;
-}
-
 .nav-pills .nav-link {
   cursor: pointer;
   font-weight: bold;

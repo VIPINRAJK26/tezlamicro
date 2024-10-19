@@ -4,8 +4,8 @@ import Locator from "../components/storelocator/SearchBar";
 
 const StoreLocator = () => {
   return (
-    <div className="py-md-5 py-3 container  ">
-      <div className="locator-top pb-5">
+    <div className="py-md-4 py-3 container  ">
+      <div className="locator-top pb-1">
         <div className="locator-top-head text-center">
           <h2 className="fw-bold ">We are here to Serve you</h2>
         </div>

@@ -1,17 +1,20 @@
 .preview-main-card {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   /* background-image: linear-gradient(
     to bottom,
     rgb(12, 2, 50),
     rgba(52, 5, 221, 0.9)
   ); */
-  background-color: rgb(12, 86, 196);
+  /* background-color: rgb(12, 86, 196); */
+  background-image: url(/sub_station.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 
-.view-all button{
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-
+.view-all button {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-text {
@@ -20,7 +23,7 @@
 }
 
 .card-header {
-  border-radius: 0.5rem 0.5rem 0 0; 
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .preview-body {
@@ -31,37 +34,59 @@
   font-size: 1.5rem;
 }
 
+.preview-body h2,h4{
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
 .text-start {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .detail-sub-img img {
   width: 90%;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 .feature-box {
   display: inline-block;
+  border: 1px solid #ddd;
+  width: fit-content;
   padding: 10px 15px;
-  margin: 5px;
-  background-color: #f1f1f1;
-  border-radius: 2px; 
-  border: 1px solid #ddd; 
+  margin: 10px;
+  border-radius: 10px;
   font-size: 14px;
-  color: #333;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.feature-box:hover {
+@supports (backdrop-filter: blur(10px)) {
+  .feature-box {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* .feature-box {
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px; 
+  font-size: 14px;
+  color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); 
+} */
+
+/* .feature-box:hover {
   background-color: #e10e0eec; 
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.04);
   color: white;
   transition: all .3s ease-in-out;
-}
-
+} */
 
 @media (max-width: 768px) {
   .card-text {
@@ -69,12 +94,17 @@
     text-align: justify;
   }
 
-  .preview-body h2{
+  .preview-body h2 {
     font-size: 1.5rem;
   }
 
   .preview-body h4 {
     font-size: 1.2rem;
     padding-top: 20px;
+  }
+
+  .feature-box {
+    width: auto;
+    border-radius: 10px;
   }
 }

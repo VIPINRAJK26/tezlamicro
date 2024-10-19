@@ -3,7 +3,16 @@
   position: static;
   font-size: 15px;
   font-family: Tahoma;
+  transition: background-color 0.3s ease;
+
 }
+
+
+.custom-navbar.navbar-scrolled {
+  background-color: rgba(255, 255, 255, .92); 
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
 
 .navbar-logo {
   width: 150px;

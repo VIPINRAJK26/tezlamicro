@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Form, Button, Row, Col } from "react-bootstrap";
 
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    contact: '',
-    city: '',
-    queryType: '',
-    message: '',
-    userType: ''
+    name: "",
+    number: "",
+    type: "",
+    product_category: "", 
+    city: "",
+    message: "",
   });
+
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,17 +19,55 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Data Submitted:', formData);
+
+    fetch("https://server.tezla.in/contact/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setSubmitStatus("success");
+          setFormData({
+            name: "",
+            number: "",
+            type: "",
+            product_category: "",
+            city: "",
+            message: "",
+          });
+        } else {
+          setSubmitStatus("error");
+        }
+      })
+      .catch((error) => {
+        console.error("Error submitting form:", error);
+        setSubmitStatus("error");
+      });
   };
 
   return (
     <div className="container my-4">
       <h3 className="mb-5 fw-bold text-muted">Submit Your Query or Feedback</h3>
+
+      {submitStatus === "success" && (
+        <div className="alert alert-success" role="alert">
+          Thank you! Your query has been submitted successfully.
+        </div>
+      )}
+      {submitStatus === "error" && (
+        <div className="alert alert-danger" role="alert">
+          Oops! There was an issue submitting your query. Please try again
+          later.
+        </div>
+      )}
+
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md={6}>
             <Form.Group controlId="name">
-              {/* <Form.Label>Name *</Form.Label> */}
               <Form.Control
                 type="text"
                 name="name"
@@ -41,11 +81,10 @@ const FeedbackForm = () => {
 
           <Col md={6}>
             <Form.Group controlId="contact">
-              {/* <Form.Label>Contact No *</Form.Label> */}
               <Form.Control
                 type="text"
-                name="contact"
-                value={formData.contact}
+                name="number"
+                value={formData.number}
                 onChange={handleChange}
                 placeholder="Enter your contact number"
                 required
@@ -57,13 +96,11 @@ const FeedbackForm = () => {
         <Row className="mt-3">
           <Col md={6}>
             <Form.Group controlId="userType">
-              {/* <Form.Label>Are you?</Form.Label> */}
               <Form.Control
                 as="select"
-                name="userType"
-                value={formData.userType}
+                name="type"
+                value={formData.type}
                 onChange={handleChange}
-                placeholder="select category"
                 required
               >
                 <option value="">Select</option>
@@ -76,14 +113,12 @@ const FeedbackForm = () => {
 
           <Col md={6}>
             <Form.Group controlId="queryType">
-              {/* <Form.Label>Select Query Type *</Form.Label> */}
               <Form.Control
                 as="select"
-                name="queryType"
-                value={formData.queryType}
+                name="product_category" 
+                value={formData.product_category} 
                 onChange={handleChange}
                 required
-                placeholder="select query type"
               >
                 <option value="">Select</option>
                 <option value="Tubular Battery">Tubular Battery</option>
@@ -98,7 +133,6 @@ const FeedbackForm = () => {
         <Row className="mt-3">
           <Col md={6}>
             <Form.Group controlId="city">
-              {/* <Form.Label>Enter City *</Form.Label> */}
               <Form.Control
                 type="text"
                 name="city"
@@ -114,14 +148,13 @@ const FeedbackForm = () => {
         <Row className="mt-3">
           <Col>
             <Form.Group controlId="message">
-              {/* <Form.Label>Message (maximum 500 characters)</Form.Label> */}
               <Form.Control
                 as="textarea"
                 rows={4}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message(maximum 500 characters)"
+                placeholder="Enter your message (maximum 500 characters)"
                 maxLength="500"
               />
             </Form.Group>

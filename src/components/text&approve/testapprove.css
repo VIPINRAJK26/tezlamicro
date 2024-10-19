@@ -11,4 +11,8 @@
     .approve{
         font-size: 1.2rem;
     }
+
+    .test-approve p{
+        text-align: justify;
+    }
 }

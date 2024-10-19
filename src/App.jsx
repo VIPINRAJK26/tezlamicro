@@ -11,6 +11,8 @@ const Single = lazy(() => import("./pages/SingleProduct"));
 const Store = lazy(() => import("./pages/StoreLocator"));
 const Preview = lazy(() => import("./pages/ProductPreview"));
 const Contact = lazy(() => import("./pages/ContactUs"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
 
 function App() {
   return (
@@ -26,11 +28,13 @@ function App() {
           <Suspense>
             <Routes>
               <Route path="/" element={<Landing />} />
-              <Route path="/products/:category" element={<Products />} />
+              <Route path="/products/:category/:series" element={<Products />} />
               <Route path="/single" element={<Single />} />
               <Route path="/dealer" element={<Store />} />
               <Route path="/preview/:category" element={<Preview />} />{" "}
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
             </Routes>
           </Suspense>
         </main>

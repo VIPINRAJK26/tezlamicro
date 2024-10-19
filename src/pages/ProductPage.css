@@ -1,9 +1,8 @@
 
 .product-page {
   display: flex;
-  margin: 20px;
+  /* margin: 20px; */
 }
-
 
 .filter-container {
   padding: 15px;
@@ -11,6 +10,10 @@
   border-right: 1px solid #dee2e6; 
 }
 
+
 .card {
   margin-bottom: 20px;
+}
+::-webkit-scrollbar{
+  display: none;
 }
