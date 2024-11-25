@@ -43,7 +43,7 @@ const HomeSlider = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="https://electronicafinance.com/wp-content/uploads/2023/05/how-to-convert-your-normal-inverter-into-a-solar-one-scaled.webp"
+            src="/home-slider.jpg"
             className="d-block w-100 img-fluid"
             alt="Second slide"
           />
