@@ -118,8 +118,9 @@ const Footer = () => {
               <FaXTwitter className="mx-2" />
             </p>
             <p className="mt-2">
-              Â© 2024 TEZLA Energy Pvt. Ltd. All rights reserved.
+              © 2024 TEZLA Energy Pvt. Ltd. All rights reserved.
             </p>
+            <p>Powered By Exmedia</p>
             <p>
               <Link to={"/terms"}>
                 <a href="#" className="text-decoration-none">
