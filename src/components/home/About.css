@@ -21,6 +21,11 @@
   color: #007bff;
 }
 
+.about-right{
+  position: relative;
+  top: 30px;
+}
+
 .about-right p {
   position: absolute;
   top: 20%;

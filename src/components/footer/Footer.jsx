@@ -3,10 +3,10 @@ import {
   FaFacebook,
   FaInstagram,
   FaYoutube,
-  FaTwitter,
   FaEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
@@ -49,7 +49,9 @@ const Footer = () => {
             <ul className="list-unstyled text-center address">
               <li>TEZLA Energy Pvt. Ltd</li>
               <li>
-                Ananthapura Industrial Area, Kannur, Kubmala, Kerala-671321
+                Ananthapuram Industrialvelpmemnt Plot, <br /> Kannur, Kumbala,
+                Kasaragod, <br />
+                Kerala-671321
               </li>
               <li>
                 <a
@@ -68,7 +70,7 @@ const Footer = () => {
                   href="mailto:texlacare@tezlabattries.com"
                   className="text-decoration-none text-dark"
                 >
-                  texlacare@tezlabattries.com
+                  tezlacare@tezla.in
                 </a>
               </li>
             </ul>
@@ -111,7 +113,7 @@ const Footer = () => {
               <FaFacebook className="mx-2" />
               <FaInstagram className="mx-2" />
               <FaYoutube className="mx-2" />
-              <FaTwitter className="mx-2" />
+              <FaXTwitter className="mx-2" />
             </p>
             <p className="mt-2">
               Â© 2024 TEZLA Energy Pvt. Ltd. All rights reserved.

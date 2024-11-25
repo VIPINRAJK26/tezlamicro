@@ -35,7 +35,7 @@ function About() {
 
   return (
     <section>
-      <div className="container d-flex flex-column flex-md-row justify-content-center about py-md-5 py-3">
+      <div className="container d-flex flex-column flex-md-row justify-content-center about pt-md-3 py-md-0 py-3">
         <div
           className="about-left col-12 col-md-6 align-content-center rounded-4"
           data-aos="zoom-in"

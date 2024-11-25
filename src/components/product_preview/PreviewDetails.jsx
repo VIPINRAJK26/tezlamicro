@@ -153,8 +153,7 @@ const solarData = [
       "Max Panel Volt : 50PV - 200PV ",
       "Warranty : 3 Years",
     ],
-    Image:
-      "https://leaderbattery.com/wp-content/uploads/2023/03/1175-1024x1024.png",
+    Image: "/home-ups.jpg",
   },
 ];
 const mpptData = [
@@ -181,14 +180,9 @@ const mpptData = [
   },
 ];
 
+
 const PreviewDetails = () => {
-
-
-  const { category} = useParams();
-
-
-  
-
+  const { category } = useParams();
 
   let productData = [];
   if (category === "TUBULAR BATTERY") {
@@ -202,8 +196,7 @@ const PreviewDetails = () => {
   } else if (category === "MPPT S") {
     productData = mpptData;
   }
-  
-  
+
   return (
     <div className="preview container mx-0 px-0 mt-md-0">
       {productData.map((product, index) => (
@@ -218,7 +211,9 @@ const PreviewDetails = () => {
             }}
           /> */}
           <div className="preview-body card-body px-5 pt-5">
-            <h2 className="fw-bold text-white card-title text-center">{product.series}</h2>
+            <h2 className="fw-bold text-white card-title text-center">
+              {product.series}
+            </h2>
             <h4 className="fw-bold text-white card-title text-center">
               {product.sub_name}
             </h4>

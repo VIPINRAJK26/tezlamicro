@@ -8,9 +8,9 @@ import About from "../components/home/About";
 import Service from "../components/home/Service";
 import CardSlider from "../components/home/CardSlider";
 import Customers from "../components/home/Customers";
-import Strategy from "../components/home/Strategy";
+// import Strategy from "../components/home/Strategy";
 import BatterySection from "../components/home/BatterySection";
-import HighlightSpecifications from "../components/home/HighlightSpec";
+// import HighlightSpecifications from "../components/home/HighlightSpec";
 import TestApprove from "../components/text&approve/TestApprove";
 
 const HomePage = () => {
