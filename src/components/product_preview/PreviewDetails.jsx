@@ -130,8 +130,7 @@ const hkvaData = [
       "VOLTAGE : 24 VDC - 120 VDC",
       "3 YEARS WARRANTY",
     ],
-    Image:
-      "https://5.imimg.com/data5/SELLER/Default/2022/4/MA/WC/RF/18017009/luminous-zolt-1700-home-pure-sinewave-inverter.jpg",
+    Image: "/home-ups.jpg",
   },
 ];
 const solarData = [

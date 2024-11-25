@@ -7,13 +7,10 @@ const MainPreview = () => {
 
   const images = {
     "TUBULAR BATTERY": "/home-slider.jpg",
-    "INVERTER":
-      "https://www.tatagreenbattery.com/wp-content/uploads/2020/11/Banner_01_1920x837-4-1.jpg",
-    "HKVA INVERTER":
-      "https://www.tulsibattery.com/wp-content/uploads/Luminous-iCruze-Banner.webp",
-    "SOLAR PCU":
-      "https://www.upsinverter.com/wp-content/uploads/2020/09/solar-pcu31-min.jpg",
-    "MPPT S": "https://i.ytimg.com/vi/6BBsLsQKByc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDwdUos8eAburUa3-veTWFlviajcQ",
+    INVERTER: "/home-slider.jpg",
+    "HKVA INVERTER": "/home-slider.jpg",
+    "SOLAR PCU": "/home-slider.jpg",
+    "MPPT S": "/home-slider.jpg",
   };
 
   const details = {

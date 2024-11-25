@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaEnvelope,
   FaWhatsapp,
+  FaPhone,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./Footer.css";
@@ -60,7 +61,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-decoration-none text-dark"
                 >
-                  <FaWhatsapp className="me-2" />
+                  <FaPhone className="me-2" />
+                  <FaWhatsapp className="me-2" />:
                   +91 79027 77727
                 </a>
               </li>
