@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  FaWhatsapp,
+  FaPhone,
+} from "react-icons/fa";
 import FeedbackForm from "../components/contactus/FeedbackForm";
 
 const ContactUs = () => {
@@ -18,10 +22,11 @@ const ContactUs = () => {
           <h5 className=" text-md-start">TEZLA Energry Pvt. Ltd. </h5>
           <ul className="list-unstyled text-md-start">
             <li>Head Office</li>
-            <li>Ananthapura Industrial Area, </li>
-            <li>Kannur, Kubmala,Kerala-671321</li>
-            <li> Ph. /WhatsApp +91 7902777727 </li>
-            <li>Email:texlacare@tezlabattries.com</li>
+            <li>Ananthapuram Industrialvelpmemnt Plot, </li>
+            <li>Kannur, Kumbala, Kasaragod</li>
+            <li> Kerala-671321</li>
+            <li> <FaPhone/> <FaWhatsapp/> : +91 7902777727 </li>
+            <li>Email:tezlacare@tezla.in</li>
           </ul>
         </div>
       </div>

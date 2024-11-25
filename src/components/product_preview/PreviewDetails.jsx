@@ -22,7 +22,7 @@ const batteryData = [
     features2: [
       "Capacity: 100 Ah - 200 Ah",
       "Rating: 20Hr",
-      "SPG : 1.240@27oC",
+      "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
     Image: "/tez-battery.jpg",
@@ -45,7 +45,7 @@ const batteryData = [
     features2: [
       "Capacity: 100 Ah - 220 Ah",
       "Rating: 10Hr",
-      "SPG : 1.240@27oC",
+      "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
     Image: "/tez-battery.jpg",
@@ -68,7 +68,7 @@ const batteryData = [
     features2: [
       "Capacity: 100 Ah - 200 Ah",
       "Rating: 20Hr",
-      "SPG : 1.240@27oC",
+      "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
     Image: "/tez-battery.jpg",
@@ -115,9 +115,9 @@ const hkvaData = [
     Compactable: [
       "COMPACTABLE : ",
       " Hospital ,",
-      " IT Centers ,",
+      " IT Centres ,",
       " Labs ,",
-      " Factory",
+      " Factories , ",
       "etc.",
     ],
     protection: [
@@ -126,8 +126,8 @@ const hkvaData = [
       " OVERCHARGE AND DISCHARGE PROTECTION",
     ],
     features2: [
-      "CAPACITY : 150 VA - 10000 VA",
-      "VOLTAGE : 24 VDC - 120 VDC",
+      "CAPACITY : 650 VA - 10000 VA",
+      "VOLTAGE : 12 VDC - 120 VDC",
       "3 YEARS WARRANTY",
     ],
     Image: "/home-ups.jpg",
@@ -147,10 +147,8 @@ const solarData = [
       "PURE SINE WAVE OUTPUT",
     ],
     features2: [
-      "Voltage : 120 VDC - 48 VDC",
-      "Max Champ : 30A ",
-      "Max Panel Volt : 50PV - 200PV ",
-      "Warranty : 3 Years",
+      "KWA Range : 1 KV - 10 KV",
+      
     ],
     Image: "/home-ups.jpg",
   },

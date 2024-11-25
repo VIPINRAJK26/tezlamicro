@@ -34,12 +34,12 @@ const HomePage = () => {
         <Customers />
       </div>
       <div>{/* <HighlightSpecifications/> */}</div>
-      <div className="pb-5  mb-md-0" >
+      {/* <div className="pb-5  mb-md-0" >
         <BatterySection />
       </div>
       <div className="pt-5 pb-5 ">
         <TestApprove />
-      </div>
+      </div> */}
     </div>
   );
 };

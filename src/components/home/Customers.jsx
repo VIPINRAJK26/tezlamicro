@@ -108,7 +108,7 @@ const Customers = () => {
             "we always stand for investing in Advanced Technologies and
             infrastructure to stay ahead of the curve. Our commitment to quality
             is unwavering, ensuring that all our products meet high performance
-            and international quality standards. our manufacturing plants are
+            and international quality standards. Our manufacturing plants are
             equipped with the latest and most advanced machines sourced from
             various countries worldwide. Our impressive list of machinery
             includes "
