@@ -25,7 +25,7 @@ const batteryData = [
       "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
-    Image: "/tez-battery.jpg",
+    Image: "/C20TALL.jpg",
   },
   {
     series: "C10 TALL TUBULAR BATTERIES",
@@ -48,7 +48,7 @@ const batteryData = [
       "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
-    Image: "/tez-battery.jpg",
+    Image: "/C10TALL.jpg",
   },
   {
     series: "C10 TALL TUBULAR BATTERIES PREMIUM",
@@ -71,7 +71,7 @@ const batteryData = [
       "SPG : 1.240@27°C",
       "LWH : 503 X 190 X 412",
     ],
-    Image: "/tez-battery.jpg",
+    Image: "/C10TALL_PREMIUM.jpg",
   },
 ];
 
@@ -147,7 +147,7 @@ const solarData = [
       "PURE SINE WAVE OUTPUT",
     ],
     features2: [
-      "KWA Range : 1 KV - 10 KV",
+      "VA Rating : 1 kVA - 10 kVA",
       
     ],
     Image: "/home-ups.jpg",
