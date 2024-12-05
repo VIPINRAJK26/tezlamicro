@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="list-unstyled text-center address">
               <li>TEZLA Energy Pvt. Ltd</li>
               <li>
-                Ananthapuram Industrialvelpmemnt Plot, <br /> Kannur, Kumbala,
+                Ananthapuram Industrial development Plot, <br /> Kannur, Kumbala,
                 Kasaragod, <br />
                 Kerala-671321
               </li>

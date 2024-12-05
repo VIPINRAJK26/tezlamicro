@@ -6,25 +6,7 @@ const Privacy = () => {
     <div className='container terms pt-2'>
       <h1>Privacy Policy</h1>
       <p>Last updated: October 19, 2024</p>
-      <p>
-        This Privacy Policy describes Our policies and procedures on the
-        collection, use and disclosure of Your information when You use the
-        Service and tells You about Your privacy rights and how the law protects
-        You.
-      </p>
-      <p>
-        We use Your Personal data to provide and improve the Service. By using
-        the Service, You agree to the collection and use of information in
-        accordance with this Privacy Policy. This Privacy Policy has been
-        created with the help of the{" "}
-        <a
-          href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/"
-          target="_blank"
-        >
-          Free Privacy Policy Generator
-        </a>
-        .
-      </p>
+      
       <h2>Interpretation and Definitions</h2>
       <h3>Interpretation</h3>
       <p>
@@ -233,19 +215,7 @@ const Privacy = () => {
           system and server integrity).
         </li>
       </ul>
-      <p>
-        Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
-        Persistent Cookies remain on Your personal computer or mobile device
-        when You go offline, while Session Cookies are deleted as soon as You
-        close Your web browser. Learn more about cookies on the{" "}
-        <a
-          href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking"
-          target="_blank"
-        >
-          Free Privacy Policy website
-        </a>{" "}
-        article.
-      </p>
+      
       <p>
         We use both Session and Persistent Cookies for the purposes set out
         below:
@@ -558,7 +528,7 @@ const Privacy = () => {
             class="__cf_email__"
             data-cfemail="2551405d4944464457406551405f494447445151574c40560b464a48"
           >
-            [email&#160;protected]
+            tezlacare@tezla.in
           </a>
         </li>
       </ul>

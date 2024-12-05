@@ -22,7 +22,7 @@ const ContactUs = () => {
           <h5 className=" text-md-start">TEZLA Energry Pvt. Ltd. </h5>
           <ul className="list-unstyled text-md-start">
             <li>Head Office</li>
-            <li>Ananthapuram Industrialvelpmemnt Plot, </li>
+            <li>Ananthapuram Industrial development Plot, </li>
             <li>Kannur, Kumbala, Kasaragod</li>
             <li> Kerala-671321</li>
             <li> <FaPhone/> <FaWhatsapp/> : +91 7902777727 </li>
