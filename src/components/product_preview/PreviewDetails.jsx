@@ -108,6 +108,7 @@ const PreviewDetails = () => {
                     View All Variants
                   </button>
                 </Link>
+
                 <button className="btn text-white btn-transparent rounded-5">
                   <i className="fa-solid fa-download text-white me-2" />
                   Download Brochure

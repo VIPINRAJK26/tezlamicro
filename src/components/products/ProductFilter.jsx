@@ -2,29 +2,21 @@ import React, { useState } from "react";
 import { Accordion, Card, Button, Collapse, Form } from "react-bootstrap";
 
 const ProductFilter = ({ onFilterChange }) => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedSeries, setSelectedSeries] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedSeries, setSelectedSeries] = useState(null);
   const [openCategory, setOpenCategory] = useState(true);
-  const [openSeries, setOpenSeries] = useState(true); 
+  const [openSeries, setOpenSeries] = useState(true);
 
-  const handleCheckboxChange = (event, filterType) => {
-    const { value, checked } = event.target;
+  const handleCategoryChange = (event) => {
+    const category = event.target.value;
+    setSelectedCategory(category);
+    onFilterChange({ category, series: selectedSeries });
+  };
 
-    if (filterType === "category") {
-      const updatedCategories = checked
-        ? [...selectedCategories, value] 
-        : selectedCategories.filter((category) => category !== value);
-
-      setSelectedCategories(updatedCategories);
-      onFilterChange({ category: updatedCategories, series: selectedSeries });
-    } else if (filterType === "series") {
-      const updatedSeries = checked
-        ? [...selectedSeries, value] 
-        : selectedSeries.filter((seriesItem) => seriesItem !== value); 
-
-      setSelectedSeries(updatedSeries);
-      onFilterChange({ category: selectedCategories, series: updatedSeries });
-    }
+  const handleSeriesChange = (event) => {
+    const series = event.target.value;
+    setSelectedSeries(series);
+    onFilterChange({ category: selectedCategory, series });
   };
 
   return (
@@ -56,11 +48,11 @@ const ProductFilter = ({ onFilterChange }) => {
               ].map((category) => (
                 <Form.Check
                   key={category}
-                  type="checkbox"
+                  type="radio"
                   label={category}
                   value={category}
-                  checked={selectedCategories.includes(category)} 
-                  onChange={(e) => handleCheckboxChange(e, "category")}
+                  checked={selectedCategory === category}
+                  onChange={handleCategoryChange}
                 />
               ))}
             </Card.Body>
@@ -92,11 +84,11 @@ const ProductFilter = ({ onFilterChange }) => {
               ].map((series) => (
                 <Form.Check
                   key={series}
-                  type="checkbox"
+                  type="radio"
                   label={series}
                   value={series}
-                  checked={selectedSeries.includes(series)}
-                  onChange={(e) => handleCheckboxChange(e, "series")}
+                  checked={selectedSeries === series}
+                  onChange={handleSeriesChange}
                 />
               ))}
             </Card.Body>

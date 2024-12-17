@@ -17,3 +17,24 @@
 ::-webkit-scrollbar{
   display: none;
 }
+
+
+.no-products-found {
+  padding: 40px;
+  text-align: center;
+}
+
+.no-products-icon {
+  margin-bottom: 20px;
+}
+
+.no-products-found h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6c757d; /* You can adjust the color */
+}
+
+.no-products-found p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
